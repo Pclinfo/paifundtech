@@ -1,0 +1,416 @@
+/* Hero.css */
+
+.services {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.services-ai-img-1 {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.services-ai-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services-ai-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.services-ai-content h2 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.services-ai-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.services-ai-content-1 {
+    padding: 4rem;
+    text-align: center;
+    background: linear-gradient(160deg, #000000, #423F3F);
+    color: #fff;
+}
+
+.services-ai-content-1 p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.services-ai-button {
+    margin-top: 1rem;
+}
+
+.services-ai-content button {
+    background-color: #D33333;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.services-ai-content button:hover {
+    background-color: #c0392b;
+}
+
+.r-c {
+    color: #D33333;
+}
+
+.services-ai-content-subcard {
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    background: linear-gradient(160deg, #000000, #423F3F);
+    padding: 80px;
+}
+
+.services-ai-content-title-1 h2,
+.services-ai-content-title-2 h3 {
+    color: #ff4d4d;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.services-ai-content-title-1 p {
+    margin-bottom: 20px;
+}
+
+.services-ai-content-subcard-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.services-ai-content-subcard-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.financial-accounting,
+.compliance-regime,
+.payroll-administration,
+.compliance-diagnostics,
+.virtual-cfo,
+.representation,
+.accounting-advisory-services,
+.us-gaap,
+.audit-assistance,
+.special-purpose-audits,
+.forensic-audits,
+.it-audits,
+.enterprise-risk,
+.internal-control-reviews,
+.business-process,
+.planning-and-advisory,
+.cross-border-taxation,
+.transfer-pricing,
+.expatriates,
+.indirect-taxation,
+.representation {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.financial-accounting img,
+.compliance-regime img,
+.payroll-administration img,
+.compliance-diagnostics img,
+.virtual-cfo img,
+.representation img,
+.accounting-advisory-services img,
+.us-gaap img,
+.audit-assistance img,
+.special-purpose-audits img,
+.forensic-audits img,
+.it-audits img,
+.enterprise-risk img,
+.internal-control-reviews img,
+.business-process img,
+.planning-and-advisory img,
+.cross-border-taxation img,
+.transfer-pricing img,
+.expatriates img,
+.indirect-taxation img,
+.representation img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.financial-accounting h3,
+.compliance-regime h3,
+.payroll-administration h3,
+.compliance-diagnostics h3,
+.virtual-cfo h3,
+.representation h3,
+.accounting-advisory-services h3,
+.us-gaap h3,
+.audit-assistance h3,
+.special-purpose-audits h3,
+.forensic-audits h3,
+.it-audits h3,
+.enterprise-risk h3,
+.internal-control-reviews h3,
+.business-process h3,
+.planning-and-advisory h3,
+.cross-border-taxation h3,
+.transfer-pricing h3,
+.expatriates h3,
+.indirect-taxation h3,
+.representation h3 {
+    color: #ff4d4d;
+    padding: 10px 15px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.financial-accounting p,
+.compliance-regime p,
+.payroll-administration p,
+.compliance-diagnostics p,
+.virtual-cfo p,
+.representation p,
+.accounting-advisory-services p,
+.us-gaap p,
+.audit-assistance p,
+.special-purpose-audits p,
+.forensic-audits p,
+.it-audits p,
+.enterprise-risk p,
+.internal-control-reviews p,
+.business-process p,
+.planning-and-advisory p,
+.cross-border-taxation p,
+.transfer-pricing p,
+.expatriates p,
+.indirect-taxation p,
+.representation p {
+    padding: 0 15px 15px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .services-ai-content h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .services-ai-content {
+        left: 3%;
+        max-width: 90%;
+    }
+
+    .services-ai-content h2 {
+        font-size: 2rem;
+    }
+
+    .services-ai-content p {
+        font-size: 0.9rem;
+    }
+
+    .services-ai-content-1 {
+        max-width: 700px;
+    }
+
+    .services-ai-content-1 p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-ai-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-ai-content-1 {
+        max-width: 600px;
+    }
+
+    .services-ai-content p {
+        font-size: 0.85rem;
+    }
+
+    .services-ai-button button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+    .services-ai-content-1 p {
+        max-width: 700px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .services-ai-content-1 {
+        padding: 3.5rem;
+    }
+
+    .services-ai-content-1 p {
+        max-width: 600px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .services-ai-content-1 {
+        padding: 2.5rem;
+    }
+
+    .services-ai-content-1 p {
+        max-width: 60%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .services-ai-content-1 {
+        padding: 1.5rem;
+    }
+
+    .services-ai-content-1 p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+/* ... (other existing media queries remain unchanged) ... */
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+
+    .financial-accounting,
+    .compliance-regime,
+    .payroll-administration,
+    .compliance-diagnostics,
+    .virtual-cfo,
+    .representation,
+    .accounting-advisory-services,
+    .us-gaap,
+    .audit-assistance,
+    .special-purpose-audits,
+    .forensic-audits,
+    .it-audits,
+    .enterprise-risk,
+    .internal-control-reviews,
+    .business-process,
+    .planning-and-advisory,
+    .cross-border-taxation,
+    .transfer-pricing,
+    .expatriates,
+    .indirect-taxation,
+    .representation {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .services-ai-content-subcard-1,
+    .services-ai-content-subcard-2 {
+        flex-direction: column;
+    }
+
+    .financial-accounting,
+    .compliance-regime,
+    .payroll-administration,
+    .compliance-diagnostics,
+    .virtual-cfo,
+    .representation,
+    .accounting-advisory-services,
+    .us-gaap,
+    .audit-assistance,
+    .special-purpose-audits,
+    .forensic-audits,
+    .it-audits,
+    .enterprise-risk,
+    .internal-control-reviews,
+    .business-process,
+    .planning-and-advisory,
+    .cross-border-taxation,
+    .transfer-pricing,
+    .expatriates,
+    .indirect-taxation,
+    .representation {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-ai-content-subcard {
+        padding: 10px;
+    }
+
+    .services-ai-content-title-1 h2,
+    .services-ai-content-title-2 h3 {
+        font-size: 1.5em;
+    }
+
+    .financial-accounting img,
+    .compliance-regime img,
+    .payroll-administration img,
+    .compliance-diagnostics img,
+    .virtual-cfo img,
+    .representation img,
+    .accounting-advisory-services img,
+    .us-gaap img,
+    .audit-assistance img,
+    .special-purpose-audits img,
+    .forensic-audits img,
+    .it-audits img,
+    .enterprise-risk img,
+    .internal-control-reviews img,
+    .business-process img,
+    .planning-and-advisory img,
+    .cross-border-taxation img,
+    .transfer-pricing img,
+    .expatriates img,
+    .indirect-taxation img,
+    .representation img {
+        height: 150px;
+    }
+}

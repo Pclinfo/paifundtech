@@ -1,0 +1,302 @@
+/* Hero.css */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-ai-img-1 {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+
+.hero-ai-img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-ai-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-ai-content h2 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-ai-content p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-ai-content-1 {
+  width: 100%;
+  padding: 4rem;
+  height: 250px;
+  text-align: center;
+  background: linear-gradient(160deg, #000000, #423F3F);
+  color: #fff;
+}
+
+.hero-ai-content-1 p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.hero-ai-button {
+  margin-top: 1rem;
+}
+
+.hero-ai-content button {
+  background-color: #D33333;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-ai-content button:hover {
+  background-color: #c0392b;
+}
+
+.r-c {
+  color: #D33333;
+}
+
+/* New styles for hero-ai-content-1 */
+
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .hero-ai-content h2 {
+    font-size: 2.2rem;
+  }
+  
+
+}
+
+@media (max-width: 768px) {
+  .hero-ai-content {
+    left: 3%;
+    max-width: 90%;
+  }
+
+  .hero-ai-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-ai-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-ai-content-1 {
+    max-width: 700px;
+  }
+
+  .hero-ai-content-1 p {
+    font-size: 0.9rem;
+  }
+  .hero-ai-content-1{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-ai-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-ai-content-1 {
+    max-width: 600px;
+  }
+
+  .hero-ai-content p {
+    font-size: 0.85rem;
+  }
+
+  .hero-ai-button button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Hero.css */
+
+/* ... (previous styles remain unchanged) ... */
+
+
+/* Media Queries */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+  .hero-ai-content-1 p {
+    max-width: 700px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .hero-ai-content-1 {
+    padding: 3.5rem;
+  }
+
+  .hero-ai-content-1 p {
+    max-width: 600px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .hero-ai-content-1 {
+    padding: 2.5rem;
+  }
+
+  .hero-ai-content-1 p {
+    max-width: 60%;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .hero-ai-content-1 {
+    margin-left: -20px;
+    padding: 1.5rem;
+  }
+
+  .hero-ai-content-1 p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+/* ... (other existing media queries remain unchanged) ... */
+
+
+/* Modal container */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Form styles */
+.pai-contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pai-form-group {
+  margin-bottom: 20px;
+}
+
+.pai-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.pai-form-group input,
+.pai-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.pai-form-group textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background-color: #D33333;
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    padding: 15px;
+  }
+
+  .pai-form-group {
+    margin-bottom: 15px;
+  }
+
+  .pai-form-group input,
+  .pai-form-group textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  form button[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Overlay styles */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 1000;
+}

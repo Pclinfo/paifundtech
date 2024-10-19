@@ -1,0 +1,349 @@
+.aif {
+    margin: 0 auto;
+    margin-top: 65px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    
+}
+
+.aif-header-title-1 h2,
+.aif-content-title-1 h2,
+.aif-card h2,
+.aif-main-title-1 h2,
+.aif-main-title-2 h2 {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+
+.aif-header-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background-color: #2c2c2c;
+    border: 1px solid #D33333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    
+}
+
+.aif-header-content-1 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.aif-content-title-1 h4,
+.aif-content-title-2 h4,
+.aif-content-title-3 h4,
+.aif-subcard-1 h4,
+.aif-subcard-2 h4,
+.aif-subcard-3 h4,
+.aif-subcard-4 h4,
+.aif-subcard-5 h4 {
+    color: #ff0000;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
+
+.aif-content-title-1 p,
+.aif-content-title-2 p,
+.aif-content-title-3 p,
+.aif-subcard-1 p,
+.aif-subcard-2 p,
+.aif-subcard-3 p,
+.aif-subcard-4 p,
+.aif-subcard-5 p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    
+}
+
+.aif-main-1,
+.aif-main-2 {
+    margin-top: 40px;
+}
+
+.aif-card,
+.aif-card-1,
+.aif-card-2,
+.aif-card-3,
+.aif-card-4,
+.aif-card-5,
+.aif-card-6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    
+}
+
+
+.private-equity-funds,
+.real-estate-funds,
+.hedge-funds,
+.venture-capital-funds,
+.commodity-funds,
+.expertise-in-alternative-investments,
+.customized-investment-strategies,
+.rigorous-due-diligence,
+.active-fund-management,
+.transparent-reporting {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    border: 1px solid #D33333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    
+}
+
+/* Base styles (mobile-first) */
+.aif-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.aif-subcard-1,
+.aif-subcard-2,
+.aif-subcard-3,
+.aif-subcard-4,
+.aif-subcard-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    background-color: #2c2c2c;
+    border: 1px solid #D33333;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.aif-subcard-2,
+.aif-subcard-4 {
+    margin-bottom: 60px;
+}
+
+.aif-subcard-img-1 img,
+.aif-subcard-img-2 img,
+.aif-subcard-img-3 img,
+.aif-subcard-img-4 img,
+.aif-subcard-img-5 img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .aif {
+        margin-top: 70px;
+    }
+
+    .aif-header-content-1 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aif-header-content-1 img {
+        max-width: 350px;
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .aif-header-title-1 h2,
+    .aif-content-title-1 h2,
+    .aif-card h2,
+    .aif-main-title-1 h2,
+    .aif-main-title-2 h2 {
+        font-size: 24px;
+    }
+
+    .aif-content-title-1 h3,
+    .aif-content-title-2 h3,
+    .aif-content-title-3 h3,
+    .aif-subcard-1 h3,
+    .aif-subcard-2 h3,
+    .aif-subcard-3 h3,
+    .aif-subcard-4 h3,
+    .aif-subcard-5 h3 {
+        font-size: 20px;
+    }
+
+    .aif-card,
+    .aif-card-1,
+    .aif-card-2,
+    .aif-card-4,
+    .aif-card-5 {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .aif-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .aif-subcard-1,
+    .aif-subcard-3,
+    .aif-subcard-5 {
+        grid-column: 1;
+    }
+
+
+    .aif-subcard-2,
+    .aif-subcard-4 {
+        grid-column: 2;
+    }
+
+    .aif-subcard-img-1,
+    .aif-subcard-img-3,
+    .aif-subcard-img-5 {
+        grid-column: 2;
+    }
+
+    .aif-subcard-img-2,
+    .aif-subcard-img-4 {
+        grid-column: 1;
+        margin-top: -100px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 900px),
+(min-width: 768px) {
+    .aif {
+        margin-top: 70px;
+    }
+
+    .aif-card {
+        max-width: 1200px;
+    }
+
+    .aif-header-title-1 h2,
+    .aif-content-title-1 h2,
+    .aif-card h2,
+    .aif-main-title-1 h2,
+    .aif-main-title-2 h2 {
+        font-size: 28px;
+    }
+
+    .aif-content-title-1 h3,
+    .aif-content-title-2 h3,
+    .aif-content-title-3 h3,
+    .aif-subcard-1 h3,
+    .aif-subcard-2 h3,
+    .aif-subcard-3 h3,
+    .aif-subcard-4 h3,
+    .aif-subcard-5 h3 {
+        font-size: 22px;
+    }
+
+    .aif-subcard-1,
+    .aif-subcard-3,
+    .aif-subcard-5 {
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .aif-subcard-2,
+    .aif-subcard-4 {
+        margin-bottom: 90px;
+    }
+
+    .aif-subcard-img-1 img,
+    .aif-subcard-img-3 img,
+    .aif-subcard-img-5 img {
+        margin-left: 60px;
+    }
+
+    .aif-subcard-img-2 img,
+    .aif-subcard-img-4 img {
+        margin-top: -200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aif {
+        margin-top: 70px;
+    }
+
+    .aif-card {
+        max-width: 1200px;
+    }
+
+    .aif-header-title-1 h2,
+    .aif-content-title-1 h2,
+    .aif-card h2,
+    .aif-main-title-1 h2,
+    .aif-main-title-2 h2 {
+        font-size: 28px;
+    }
+
+    .aif-content-title-1 h3,
+    .aif-content-title-2 h3,
+    .aif-content-title-3 h3,
+    .aif-subcard-1 h3,
+    .aif-subcard-2 h3,
+    .aif-subcard-3 h3,
+    .aif-subcard-4 h3,
+    .aif-subcard-5 h3 {
+        font-size: 22px;
+    }
+
+    .aif-subcard-1,
+    .aif-subcard-3,
+    .aif-subcard-5 {
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .aif-subcard-2,
+    .aif-subcard-4 {
+        margin-bottom: 90px;
+    }
+
+    .aif-subcard-img-1 img,
+    .aif-subcard-img-3 img,
+    .aif-subcard-img-5 img {
+        margin-left: 60px;
+    }
+
+    .aif-subcard-img-2 img,
+    .aif-subcard-img-4 img {
+        margin-top: -200px;
+    }
+}
+
+/* Large desktop styles */
+@media screen and (min-width: 1440px) {
+    .aif {
+        margin-top: 70px;
+    }
+
+    .aif-card {
+        gap: 40px;
+    }
+
+    .aif-subcard-1,
+    .aif-subcard-3,
+    .aif-subcard-5 {
+        gap: 40px;
+    }
+}

@@ -1,0 +1,178 @@
+/* Content.css */
+
+.content {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.main-card-1 {
+  background-color: #2c2c2c;
+  border: 1px solid #D33333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-card-title-1 h3 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.main-card-title-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-card-title-2 p {
+  flex: 1;
+  margin-right: 1rem;
+  line-height: 1.6;
+}
+
+.main-card-title-2 img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ai-content-subcard {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  padding: 8.5rem;
+}
+
+.ai-content-title-1 h2 {
+  color: #D33333;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.ai-content-title-1 p {
+  margin-bottom: 1.5rem;
+}
+
+.ai-content-subcard-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.ia-customized-solutions,
+.ia-industry-expertise,
+.innovative-approach,
+.ia-focused-approach {
+  flex: 1;
+  background-color: #383838;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+
+.ai-content-subcard-1 img,
+.ai-content-subcard-2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.ai-content-subcard-1 h3,
+.ai-content-subcard-2 h3 {
+  color: #D33333;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ai-content-subcard-2 {
+  margin-bottom: 1.5rem;
+}
+
+.content button {
+  background-color: #D33333;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #c0392b;
+}
+
+/* Media Queries */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .ai-content-subcard-1 {
+    flex-wrap: wrap;
+  }
+
+  .ia-customized-solutions,
+  .ia-industry-expertise,
+  .innovative-approach {
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .main-card-title-2 {
+    flex-direction: column;
+  }
+
+  .main-card-title-2 img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .ia-customized-solutions,
+  .ia-industry-expertise,
+  .innovative-approach {
+    flex-basis: 100%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+  .main-card-1,
+  .ai-content-subcard {
+    padding: 1rem;
+  }
+
+  .main-card-title-1 h3,
+  .ai-content-title-1 h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  .main-card-title-1 h3,
+  .ai-content-title-1 h2 {
+    font-size: 1.2rem;
+  }
+
+  .ai-content-subcard-1 h3,
+  .ai-content-subcard-2 h3 {
+    font-size: 1rem;
+  }
+
+  .content button {
+    width: 100%;
+  }
+}
