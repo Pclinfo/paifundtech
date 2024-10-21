@@ -89,10 +89,10 @@ const Hero = () => {
               {isSubmitted && <p>Thank you! Your form has been submitted.</p>}
             </form>
           </div>
-        </Modal>
+        </Modal>  
       </div>
       <div className="hero-ai-content-1">
-        <p>At <span className='r-c'>Prachida Alternative Investment Fundtech</span>, we are dedicated to providing companies with the comprehensive financial capabilities they need to excel in an increasingly competitive landscape. Through our expertise in <span className='r-c'>Tax, Audit & Assurance, and Management Consulting,</span> we equip you with actionable insights and expert guidance to streamline operations, overcome regulatory challenges, and drive sustainable growth.</p>
+        <p>At <span className='r-c'> PaiFundtech, (Prachida Alternative Investment Fundtech)</span>, we are dedicated to providing companies with the comprehensive financial capabilities they need to excel in an increasingly competitive landscape. Through our expertise in <span className='r-c'>Tax, Audit & Assurance, and Management Consulting,</span> we equip you with actionable insights and expert guidance to streamline operations, overcome regulatory challenges, and drive sustainable growth.</p>
       </div>
     </div>
   )

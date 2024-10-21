@@ -135,7 +135,16 @@
 .transfer-pricing,
 .expatriates,
 .indirect-taxation,
-.representation {
+.representation,
+.corporate-advisory,
+.entry-strategy,
+.restructuring-management,
+.factory-set,
+.secretarial-compliance,
+.data-analytics,
+.digital-solutions,
+.digital-transformation,
+.cyber-security {
     flex: 1 1 calc(33.333% - 20px);
     background-color: #2a2a2a;
     border-radius: 8px;
@@ -164,7 +173,16 @@
 .transfer-pricing img,
 .expatriates img,
 .indirect-taxation img,
-.representation img {
+.representation img,
+.corporate-advisory img,
+.entry-strategy img,
+.restructuring-management img,
+.factory-set img,
+.secretarial-compliance img,
+.data-analytics img,
+.digital-solutions img,
+.digital-transformation img,
+.cyber-security img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -190,7 +208,16 @@
 .transfer-pricing h3,
 .expatriates h3,
 .indirect-taxation h3,
-.representation h3 {
+.representation h3,
+.corporate-advisory h3,
+.entry-strategy h3,
+.restructuring-management h3,
+.factory-set h3,
+.secretarial-compliance h3,
+.data-analytics h3,
+.digital-solutions h3,
+.digital-transformation h3,
+.cyber-security h3 {
     color: #ff4d4d;
     padding: 10px 15px;
     font-size: 22px;
@@ -218,7 +245,16 @@
 .transfer-pricing p,
 .expatriates p,
 .indirect-taxation p,
-.representation p {
+.representation p,
+.corporate-advisory p,
+.entry-strategy p,
+.restructuring-management p,
+.factory-set p,
+.secretarial-compliance p,
+.data-analytics p,
+.digital-solutions p,
+.digital-transformation p,
+.cyber-security p {
     padding: 0 15px 15px;
     margin: 0;
     flex-grow: 1;
@@ -343,7 +379,16 @@
     .transfer-pricing,
     .expatriates,
     .indirect-taxation,
-    .representation {
+    .representation,
+    .corporate-advisory,
+    .entry-strategy,
+    .restructuring-management,
+    .factory-set,
+    .secretarial-compliance,
+    .data-analytics,
+    .digital-solutions,
+    .digital-transformation,
+    .cyber-security {
         flex: 1 1 calc(50% - 20px);
     }
 }
@@ -375,7 +420,16 @@
     .transfer-pricing,
     .expatriates,
     .indirect-taxation,
-    .representation {
+    .representation,
+    .corporate-advisory,
+    .entry-strategy,
+    .restructuring-management,
+    .factory-set,
+    .secretarial-compliance,
+    .data-analytics,
+    .digital-solutions,
+    .digital-transformation,
+    .cyber-security {
         flex: 1 1 100%;
     }
 }
@@ -410,7 +464,16 @@
     .transfer-pricing img,
     .expatriates img,
     .indirect-taxation img,
-    .representation img {
+    .representation img,
+    .corporate-advisory img,
+    .entry-strategy img,
+    .restructuring-management img,
+    .factory-set img,
+    .secretarial-compliance img,
+    .data-analytics img,
+    .digital-solutions img,
+    .digital-transformation img,
+    .cyber-security img {
         height: 150px;
     }
 }

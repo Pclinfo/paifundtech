@@ -1,4 +1,4 @@
-import React, { useState }  from 'react'
+import React, { useState } from 'react'
 import './CSS/Services.css'
 import pai_logo from './Assets/pai_logo.png'
 import Modal from 'react-modal';
@@ -27,8 +27,15 @@ import transfer_pricing from './Assets/transfer_pricing.png'
 import expatriates from './Assets/expatriates.png'
 import indirect_taxation from './Assets/indirect_taxation.png'
 import investment_funds from './Assets/investment_funds.png'
-
-
+import corporate_advisory from './Assets/corporate_advisory.png'
+import entry_strategy from './Assets/entry_strategy.png'
+import factory_set from './Assets/factory_set.png'
+import data_analytics from './Assets/data_analytics.png'
+import digital_solutions from './Assets/digital_solutions.png'
+import digital_transformation from './Assets/digital_transformation.png'
+import cyber_security from './Assets/cyber_security.png'
+import restructuring_management from './Assets/restructuring_management.png'
+import secretarial_compliance from './Assets/secretarial_compliance.png'
 
 
 const Services = () => {
@@ -86,7 +93,7 @@ const Services = () => {
 
   const handleMenuItemClick = (menuItem) => {
     // You can add any additional logic here if needed
-};
+  };
 
 
   return (
@@ -205,6 +212,69 @@ const Services = () => {
       </div>
       <div className="services-ai-content-subcard">
         <div className="services-ai-content-title-2">
+          <h3>Business Advisory</h3>
+        </div>
+        <div className="services-ai-content-subcard-1">
+          <div className="corporate-advisory">
+            <img src={corporate_advisory} alt="" />
+            <h3>Corporate Advisory</h3>
+            <p>We provide expert guidance to help clients assess proposed actions or strategies within the context of India's regulatory framework. Our multidisciplinary team offers clear, informed advice on matters related to the Foreign Exchange Management Act (FEMA), Foreign Direct Investment (FDI), Company Law, direct and indirect taxes, labor laws, Special Economic Zones (SEZ), and more.</p>
+          </div>
+          <div className="entry-strategy">
+            <img src={entry_strategy} alt="" />
+            <h3>Entry Strategy</h3>
+            <p>We recommend the most suitable business structure aligned with your India strategy. Our team identifies risks and outlines the necessary steps for registering and operating entities such as Liaison Offices, Branches, Project Offices, Limited Liability Partnerships, Wholly Owned Subsidiaries, or Joint Ventures, in full compliance with regulatory and foreign exchange requirements.</p>
+          </div>
+          <div className="restructuring-management">
+            <img src={restructuring_management} alt="" />
+            <h3>Insolvency and Restructuring Management</h3>
+            <p>Our team designs tailored solutions for office or factory closures, handling workforce management, hiring contractual employees, and developing recovery plans. When restructuring isn’t viable, we assist with liquidation, while exploring options for mergers or amalgamations through our network of insolvency professionals.</p>
+          </div>
+        </div>
+        <div className="services-ai-content-subcard-2">
+          <div className="factory-set">
+            <img src={factory_set} alt="" />
+            <h3>Factory Set-Up Support</h3>
+            <p>We offer end-to-end assistance in setting up across India, from identifying the ideal location and key service providers to obtaining necessary government clearances. This includes liaising with authorities such as the Reserve Bank of India (RBI), Secretariat for Industrial Assistance (SIA), Registrar of Companies (ROC), Foreign Contribution Regulation Authority (FCRA), and the Ministry of Environment and Forests.</p>
+          </div>
+          <div className="secretarial-compliance">
+            <img src={secretarial_compliance} alt="" />
+            <h3>Secretarial Compliance</h3>
+            <p>We help businesses meet their routine statutory obligations, including drafting and maintaining key records such as meeting minutes (Annual, Shareholder, Board), handling appointments and resignations of key personnel, managing capital changes, and more. We also provide infrastructure and manpower support during the setup phase, acting as nominee resident directors if required.</p>
+          </div>
+        </div>
+      </div>
+      <div className="services-ai-content-subcard">
+        <div className="services-ai-content-title-2">
+          <h3>Digital Automation and Transformation</h3>
+        </div>
+        <div className="services-ai-content-subcard-1">
+          <div className="data-analytics">
+            <img src={data_analytics} alt="" />
+            <h3>Data Analytics</h3>
+            <p>Our data analytics designs advanced dashboards driven by KPIs, providing simple, descriptive, and predictive views of the business. These targeted dashboards become an essential tool set for quick business decision-making with growth in focus.</p>
+          </div>
+          <div className="digital-solutions">
+            <img src={digital_solutions} alt="" />
+            <h3>Digital Solutions</h3>
+            <p>Our digital solutions are tailored to an organization's needs, easy to implement, and enable seamless automation of manual processes by providing support and training on GST automation, return filing, e-invoicing, and e-way bills, compliance management, and more.</p>
+          </div>
+          <div className="digital-transformation">
+            <img src={digital_transformation} alt="" />
+            <h3>Digital Transformation</h3>
+            <p>We enable companies to use technology in the best ways to outperform their operational processes, from Procure to Pay, Order to Cash, and Record to Report. Our experts analyze critical workflows, create cost-effective, customized digital strategies, and support your team through every step of the implementation process.</p>
+          </div>
+        </div>
+        <div className="services-ai-content-subcard-2">
+          <div className="cyber-security">
+            <img src={cyber_security} alt="" />
+            <h3>Cyber Security</h3>
+            <p>It is indispensable for your organization to be strengthened with robust and reliable cybersecurity as technology becomes integral to your business. We help you enhance digital security by evaluating protocols, penetration tests, assessment of privacy measures, and ensuring compliance with industry certifications.</p>
+          </div>
+        </div>
+      </div>
+      <div className="services-ai-content-subcard">
+        <div className="services-ai-content-title-2">
           <h3>Risk Advisory</h3>
         </div>
         <div className="services-ai-content-subcard-1">
@@ -239,7 +309,7 @@ const Services = () => {
       </div>
       <div className="services-ai-content-subcard">
         <div className="services-ai-content-title-2">
-          <h3>Risk Advisory</h3>
+          <h3>Taxation</h3>
         </div>
         <div className="services-ai-content-subcard-1">
           <div className="planning-and-advisory">
@@ -278,53 +348,53 @@ const Services = () => {
         </div>
       </div>
       <div className='footer'>
-            <div className="footer-container">
-                <div className="footer-logo-section">
-                    <div className="footer-logo">
-                        <Link to="/" onClick={() => handleMenuItemClick("Home")}>
-                            <img src={pai_logo} alt="Logo" />
-                        </Link>
-                        <p></p>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div className="footer-social-icons">
-                        <a href="https://www.facebook.com/people/PCL-Infotech-Pvt-Ltd/61565409011377/">
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                        <a href="https://www.instagram.com/pclinfotech/">
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
-                            <FontAwesomeIcon icon={faTwitter} />
-                        </a>
-                    </div>
-                </div>
-                <div className="footer-links">
-                    <div className="footer-column">
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/services">Services</Link></li>
-                            <li><Link to="/investments vehicles">Investments Vehicles</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="footer-column">
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><i className="fas fa-envelope"></i>prachidaaiftech@gmail.com</li>
-                            <li><i className="fas fa-phone"></i>+91 72002-76740</li>
-                            <li><i className="fas fa-map-marker-alt"></i> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br />
-                            Senneerkuppam, Chennai-56</li>
-                        </ul>
-                    </div>
+        <div className="footer-container">
+          <div className="footer-logo-section">
+            <div className="footer-logo">
+              <Link to="/" onClick={() => handleMenuItemClick("Home")}>
+                <img src={pai_logo} alt="Logo" />
+              </Link>
+              <p></p>
             </div>
-            <div className="footer-bottom">
-                <p>© 2024 PAI Fundtech. All rights reserved. <Link to="/terms-and-conditions">Terms & Conditions</Link> · <Link to="/privacy-policy">Privacy Policy</Link></p>
+            <p></p>
+            <p></p>
+            <div className="footer-social-icons">
+              <a href="https://www.facebook.com/people/PCL-Infotech-Pvt-Ltd/61565409011377/">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="https://www.instagram.com/pclinfotech/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </div>
+          </div>
+          <div className="footer-links">
+            <div className="footer-column">
+              <h4>About Us</h4>
+              <ul>
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/investments vehicles">Investments Vehicles</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-column">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i className="fas fa-envelope"></i>prachidaaiftech@gmail.com</li>
+              <li><i className="fas fa-phone"></i>+91 72002-76740</li>
+              <li><i className="fas fa-map-marker-alt"></i> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br />
+                Senneerkuppam, Chennai-56</li>
+            </ul>
+          </div>
         </div>
+        <div className="footer-bottom">
+          <p>© 2024 PAI Fundtech. All rights reserved. <Link to="/terms-and-conditions">Terms & Conditions</Link> · <Link to="/privacy-policy">Privacy Policy</Link></p>
+        </div>
+      </div>
     </div>
   )
 }
