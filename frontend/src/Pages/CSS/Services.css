@@ -144,7 +144,9 @@
 .data-analytics,
 .digital-solutions,
 .digital-transformation,
-.cyber-security {
+.cyber-security,
+.cloud-computing,
+.backup-recovery {
     flex: 1 1 calc(33.333% - 20px);
     background-color: #2a2a2a;
     border-radius: 8px;
@@ -182,7 +184,8 @@
 .data-analytics img,
 .digital-solutions img,
 .digital-transformation img,
-.cyber-security img {
+.cyber-security img .cloud-computing img,
+.backup-recovery img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -217,7 +220,9 @@
 .data-analytics h3,
 .digital-solutions h3,
 .digital-transformation h3,
-.cyber-security h3 {
+.cyber-security h3,
+.cloud-computing h3,
+.backup-recovery h3 {
     color: #ff4d4d;
     padding: 10px 15px;
     font-size: 22px;
@@ -254,7 +259,9 @@
 .data-analytics p,
 .digital-solutions p,
 .digital-transformation p,
-.cyber-security p {
+.cyber-security p,
+.cloud-computing p,
+.backup-recovery p {
     padding: 0 15px 15px;
     margin: 0;
     flex-grow: 1;
@@ -388,7 +395,9 @@
     .data-analytics,
     .digital-solutions,
     .digital-transformation,
-    .cyber-security {
+    .cyber-security,
+    .cloud-computing,
+    .backup-recovery {
         flex: 1 1 calc(50% - 20px);
     }
 }
@@ -429,7 +438,9 @@
     .data-analytics,
     .digital-solutions,
     .digital-transformation,
-    .cyber-security {
+    .cyber-security,
+    .cloud-computing,
+    .backup-recovery {
         flex: 1 1 100%;
     }
 }
@@ -473,7 +484,9 @@
     .data-analytics img,
     .digital-solutions img,
     .digital-transformation img,
-    .cyber-security img {
+    .cyber-security img,
+    .cloud-computing img,
+    .backup-recovery img {
         height: 150px;
     }
 }
