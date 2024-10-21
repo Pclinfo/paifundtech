@@ -36,6 +36,8 @@ import digital_transformation from './Assets/digital_transformation.png'
 import cyber_security from './Assets/cyber_security.png'
 import restructuring_management from './Assets/restructuring_management.png'
 import secretarial_compliance from './Assets/secretarial_compliance.png'
+import cloud_computing from './Assets/cloud_computing.png'
+import backup_recovery from './Assets/backup_recovery.png'
 
 
 const Services = () => {
@@ -268,8 +270,18 @@ const Services = () => {
         <div className="services-ai-content-subcard-2">
           <div className="cyber-security">
             <img src={cyber_security} alt="" />
-            <h3>Cyber Security</h3>
-            <p>It is indispensable for your organization to be strengthened with robust and reliable cybersecurity as technology becomes integral to your business. We help you enhance digital security by evaluating protocols, penetration tests, assessment of privacy measures, and ensuring compliance with industry certifications.</p>
+            <h3>IT Security</h3>
+            <p>It is indispensable for your organization to be strengthened with robust and reliable cybersecurity as technology becomes integral to your business. We help you enhance digital security by evaluating protocols, penetration tests, assessment of privacy measures, and ensuring compliance with industry certifications,with Cyber Security.</p>
+          </div>
+          <div className="cloud-computing">
+            <img src={cloud_computing} alt="" />
+            <h3>Cloud Computing</h3>
+            <p>Cloud computing is the on-demand delivery of different computing services over the internet, including databases, software, servers, and analytics. Instead of maintaining physical data centers and servers, you access storage & computing power as needed from a cloud provider. </p>
+          </div>
+          <div className="backup-recovery">
+            <img src={backup_recovery} alt="" />
+            <h3>Backup and Recovery</h3>
+            <p>Backup and recovery is a process that involves making duplicate copies of critical data so that it can be restored if needed. For financial institutions, data backup and recovery is especially important because data loss can have severe consequences, such as lost revenue and reputational damage.</p>
           </div>
         </div>
       </div>
