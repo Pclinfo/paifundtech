@@ -146,7 +146,8 @@
 .digital-transformation,
 .cyber-security,
 .cloud-computing,
-.backup-recovery {
+.backup-recovery,
+.merge-acquisition {
     flex: 1 1 calc(33.333% - 20px);
     background-color: #2a2a2a;
     border-radius: 8px;
@@ -185,7 +186,8 @@
 .digital-solutions img,
 .digital-transformation img,
 .cyber-security img .cloud-computing img,
-.backup-recovery img {
+.backup-recovery img,
+.merge-acquisition img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -222,7 +224,8 @@
 .digital-transformation h3,
 .cyber-security h3,
 .cloud-computing h3,
-.backup-recovery h3 {
+.backup-recovery h3,
+.merge-acquisition h3 {
     color: #ff4d4d;
     padding: 10px 15px;
     font-size: 22px;
@@ -261,7 +264,8 @@
 .digital-transformation p,
 .cyber-security p,
 .cloud-computing p,
-.backup-recovery p {
+.backup-recovery p,
+.merge-acquisition p {
     padding: 0 15px 15px;
     margin: 0;
     flex-grow: 1;
@@ -397,7 +401,8 @@
     .digital-transformation,
     .cyber-security,
     .cloud-computing,
-    .backup-recovery {
+    .backup-recovery,
+    .merge-acquisition {
         flex: 1 1 calc(50% - 20px);
     }
 }
@@ -440,7 +445,8 @@
     .digital-transformation,
     .cyber-security,
     .cloud-computing,
-    .backup-recovery {
+    .backup-recovery,
+    .merge-acquisition {
         flex: 1 1 100%;
     }
 }
@@ -486,7 +492,8 @@
     .digital-transformation img,
     .cyber-security img,
     .cloud-computing img,
-    .backup-recovery img {
+    .backup-recovery img,
+    .merge-acquisition {
         height: 150px;
     }
 }

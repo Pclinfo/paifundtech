@@ -21,6 +21,14 @@ const Content = () => {
           <img src={ia_our_expertise} alt="" />
         </div>
       </div>
+      <div className="main-card-1">
+        <div className="main-card-title-1">
+          <h3>Our <span className='r-c'> Vision for Investment Banking</span></h3>
+        </div>
+        <div className="main-card-title-2">
+          <p>At PaiFundtech, our vision is to seamlessly extend our expertise into the realm of investment banking, empowering businesses and individuals with innovative financial solutions. We aim to facilitate growth through strategic advisory, capital raising, mergers and acquisitions, and tailored investment strategies. Guided by integrity, excellence, and a commitment to long-term partnerships, we strive to become a trusted leader in the investment banking space, driving value and sustainable success for our clients.</p>
+        </div>
+      </div>
       <div className="ai-content-subcard">
         <div className="ai-content-title-1">
           <h2>Why Choose PAI Fundtech</h2>

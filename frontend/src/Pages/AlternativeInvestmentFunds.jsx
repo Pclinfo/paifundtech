@@ -111,38 +111,72 @@ const AlternativeInvestmentFunds = () => {
                 </div>
                 <div className="aif-card-1">
                     <div className="private-equity-funds">
-                        <h4>Private Equity Funds</h4>
-                        <p>Invest in privately-held companies with high growth potential.</p>
-                        <p>Gain access to opportunities in emerging markets and industries.</p>
-                        <p>Benefit from our strategic management and long-term investment horizon.</p>
+                        <h4>1. Category I AIF</h4>
+                        <h4>Venture Capital Funds (VCF):</h4>
+                        <p>Invest in startups and early-stage businesses with growth potential.</p>
+                        <p>Focus on technology, fintech, healthcare, and emerging industries.</p>
+                        <h4>Infrastructure Funds:</h4>
+                        <p>Invest in infrastructure projects like roads, ports, power plants, and airports.</p>
+                        <p>Help in nation-building by funding long-term infrastructure assets.</p>
+                        <h4>Social Venture Funds:</h4>
+                        <p>Provide capital to businesses focused on social impact initiatives (e.g., healthcare,
+                            education, environmental sustainability).</p>
+                        <p>Investors seek measurable social outcomes along with financial returns.</p>
+                        <h4>Angel Funds:</h4>
+                        <p>A subset of venture capital funds, focused on investing in start-ups at a very early
+                            stage.</p>
+                        <p>High-risk, high-reward investments typically pooled by angel investors.</p>
                     </div>
                     <div className="real-estate-funds">
-                        <h4>Real Estate Funds</h4>
-                        <p>Explore investment opportunities in commercial and residential properties</p>
-                        <p>Benefit from stable income streams and potential capital appreciation.</p>
-                        <p>Leverage our deep market insights and expertise in property management.</p>
+                        <h4>2. Category II AIF</h4>
+                        <h4>Private Equity Funds:</h4>
+                        <p>Invest in unlisted companies and provide capital for business growth, restructuring,
+                            or buyouts.</p>
+                        <p>Often participate in management decisions and long-term strategic planning.</p>
+                        <h4>Debt Funds:</h4>
+                        <p>Invest in structured debt products or high-yield corporate debt.</p>
+                        <p>Suitable for investors seeking steady returns with moderate risk.</p>
+                        <h4>Real Estate Funds:</h4>
+                        <p>Invest in commercial or residential properties, REITs, and infrastructure projects.</p>
+                        <p>Provide diversified exposure to the real estate sector with long-term growth
+                            potential.</p>
+                        <h4>Funds of Funds:</h4>
+                        <p>Invest in other AIFs rather than directly in assets or companies.</p>
+                        <p>Provide diversified exposure by participating across multiple funds.</p>
                     </div>
                 </div>
                 <div className="aif-card-2">
                     <div className="hedge-funds">
-                        <h4>Hedge Funds</h4>
-                        <p>Access sophisticated investment strategies  include long-short equity, arbitrage, and macro trading.</p>
-                        <p>Aim for absolute returns regardless of market conditions.</p>
-                        <p>Benefit from active management by seasoned fund managers.</p>
-                    </div>
-                    <div className="venture-capital-funds">
-                        <h4>Venture Capital Funds</h4>
-                        <p>Invest in early-stage startups with disruptive technologies and innovative business models.</p>
-                        <p>Participate in the growth journey of tomorrow’s industry leaders.</p>
-                        <p>Leverage our network and experience in nurturing and scaling startups.</p>
+                        <h4>3. Category III AIF</h4>
+                        <h4>Hedge Funds:</h4>
+                        <p>Use strategies like short selling, leverage, and derivatives to maximize returns.</p>
+                        <p>Suitable for investors with a high-risk appetite seeking market-beating returns.</p>
+                        <h4>Long-Only Equity Funds:</h4>
+                        <p>Invest solely in equities without using derivatives or short-selling strategies.</p>
+                        <p>Focus on capital appreciation through long-term stock holdings.</p>
+                        <h4>Multi-Asset Funds:</h4>
+                        <p>Allocate capital across equities, bonds, commodities, and other asset classes.</p>
+                        <p>Provide diversified exposure with moderate risk and return profiles.</p>
                     </div>
                 </div>
-                <div className="aif-card-3">
-                    <div className="commodity-funds">
-                        <h4>Commodity Funds</h4>
-                        <p>Diversify portfolio with investments physical commodities such as gold, oil, and agricultural products</p>
-                        <p>Hedge against inflation and market volatility</p>
-                        <p>Take advantage of global market trends and demand-supply dynamics.</p>
+            </div>
+            <div className="aif-main-2">
+                <div className="aif-main-title-2">
+                    <h2>Investments in Insurance Companies</h2>
+                    <p>Our AIF platform offers strategic investments in insurance companies to capitalize on the sector’s growing demand and long-term profitability. We target both traditional insurers and emerging insurtech platforms, helping our investors tap into the financial stability and growth potential of the insurance industry.</p>
+                </div>
+                <div className="aif-card-4">
+                    <div className="investment-objectives">
+                        <h4>Investment Objectives</h4>
+                        <p>Long-Term Growth: Insurance is a recession-resistant industry with a steady demand for life, health, and general insurance services.</p>
+                        <p>Capital Preservation and Value Creation: We focus on high-quality insurance firms to ensure sustainable returns with capital appreciation over time.</p>
+                        <p>Sector-Specific Expertise: Our specialized team identifies opportunities within life insurance, health insurance, property insurance, and insurtech ventures, ensuring smart allocation of capital.</p>
+                    </div>
+                    <div className="investment-approach">
+                        <h4>Our Investment Approach</h4>
+                        <p>Private Equity in Insurance Companies: Invest in unlisted or emerging insurance firms with growth potential.</p>
+                        <p>Support for Innovation: Back promising insurtech platforms transforming traditional insurance models through technology.</p>
+                        <p>Governance and Compliance: We work with firms that follow strong regulatory frameworks and corporate governance standards, ensuring transparency and trust.</p>
                     </div>
                 </div>
             </div>
@@ -178,53 +212,53 @@ const AlternativeInvestmentFunds = () => {
                 </div>
             </div>
             <div className='footer'>
-            <div className="footer-container">
-                <div className="footer-logo-section">
-                    <div className="footer-logo">
-                        <Link to="/" onClick={() => handleMenuItemClick("Home")}>
-                            <img src={pai_logo} alt="Logo" />
-                        </Link>
+                <div className="footer-container">
+                    <div className="footer-logo-section">
+                        <div className="footer-logo">
+                            <Link to="/" onClick={() => handleMenuItemClick("Home")}>
+                                <img src={pai_logo} alt="Logo" />
+                            </Link>
+                            <p></p>
+                        </div>
                         <p></p>
+                        <p></p>
+                        <div className="footer-social-icons">
+                            <a href="https://www.facebook.com/people/PCL-Infotech-Pvt-Ltd/61565409011377/">
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </a>
+                            <a href="https://www.instagram.com/pclinfotech/">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
+                                <FontAwesomeIcon icon={faTwitter} />
+                            </a>
+                        </div>
                     </div>
-                    <p></p>
-                    <p></p>
-                    <div className="footer-social-icons">
-                        <a href="https://www.facebook.com/people/PCL-Infotech-Pvt-Ltd/61565409011377/">
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                        <a href="https://www.instagram.com/pclinfotech/">
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
-                            <FontAwesomeIcon icon={faTwitter} />
-                        </a>
+                    <div className="footer-links">
+                        <div className="footer-column">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li><Link to="/home">Home</Link></li>
+                                <li><Link to="/services">Services</Link></li>
+                                <li><Link to="/investments vehicles">Investments Vehicles</Link></li>
+                                <li><Link to="/contact">Contact Us</Link></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div className="footer-links">
                     <div className="footer-column">
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/services">Services</Link></li>
-                            <li><Link to="/investments vehicles">Investments Vehicles</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="footer-column">
                         <h4>Contact Us</h4>
                         <ul>
                             <li><i className="fas fa-envelope"></i>prachidaaiftech@gmail.com</li>
                             <li><i className="fas fa-phone"></i>+91 72002-76740</li>
                             <li><i className="fas fa-map-marker-alt"></i> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br />
-                            Senneerkuppam, Chennai-56</li>
+                                Senneerkuppam, Chennai-56</li>
                         </ul>
                     </div>
+                </div>
+                <div className="footer-bottom">
+                    <p>© 2024 PAI Fundtech. All rights reserved. <Link to="/terms-and-conditions">Terms & Conditions</Link> · <Link to="/privacy-policy">Privacy Policy</Link></p>
+                </div>
             </div>
-            <div className="footer-bottom">
-                <p>© 2024 PAI Fundtech. All rights reserved. <Link to="/terms-and-conditions">Terms & Conditions</Link> · <Link to="/privacy-policy">Privacy Policy</Link></p>
-            </div>
-        </div>
         </div>
     )
 }

@@ -38,6 +38,7 @@ import restructuring_management from './Assets/restructuring_management.png'
 import secretarial_compliance from './Assets/secretarial_compliance.png'
 import cloud_computing from './Assets/cloud_computing.png'
 import backup_recovery from './Assets/backup_recovery.png'
+import merge_acquisition from './Assets/merge_acquisition.png'
 
 
 const Services = () => {
@@ -243,6 +244,11 @@ const Services = () => {
             <img src={secretarial_compliance} alt="" />
             <h3>Secretarial Compliance</h3>
             <p>We help businesses meet their routine statutory obligations, including drafting and maintaining key records such as meeting minutes (Annual, Shareholder, Board), handling appointments and resignations of key personnel, managing capital changes, and more. We also provide infrastructure and manpower support during the setup phase, acting as nominee resident directors if required.</p>
+          </div>
+          <div className="merge-acquisition">
+            <img src={merge_acquisition} alt="" />
+            <h3>Merge & Acquisition</h3>
+            <p>Our Acquisition and M&A Advisory service is designed to help businesses grow, diversify, and achieve strategic goals through well-executed acquisitions, mergers, or business takeovers. Whether you are looking to expand into new markets, acquire complementary businesses, or streamline operations, we provide the expert guidance needed to make informed decisions and ensure seamless transactions.</p>
           </div>
         </div>
       </div>

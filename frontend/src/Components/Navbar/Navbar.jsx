@@ -1,7 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faChartLine, faBriefcase, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faTimes,
+  faChartLine,
+  faBriefcase,
+  faCaretDown,
+  faMoneyBillWave // Added for bonds icon
+} from '@fortawesome/free-solid-svg-icons';
 import pai_logo from '../Assets/pai_logo.png';
 import './Navbar.css';
 
@@ -16,9 +23,11 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-
-
+  // Handle scroll position on navigation
   useEffect(() => {
+    // Scroll to top whenever location changes
+    window.scrollTo(0, 0);
+
     const handleScroll = () => {
       setIsSticky(window.scrollY > 0);
     };
@@ -36,56 +45,69 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [location.pathname]); // Add location.pathname as dependency
 
+  // Reset menu states on navigation
   useEffect(() => {
     setShowSubmenu(false);
     setIsOpen(false);
   }, [location]);
 
+  // Custom Link component that ensures scroll reset
+  const ScrollToTopLink = ({ to, children, onClick }) => {
+    const handleClick = (e) => {
+      if (onClick) onClick(e);
+      window.scrollTo(0, 0);
+    };
 
-  
-  const handleMenuItemClick = (menuItem) => {
-    // You can add any additional logic here if needed
-};
-
+    return (
+      <Link to={to} onClick={handleClick}>
+        {children}
+      </Link>
+    );
+  };
 
   return (
     <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-        <Link to="/" onClick={() => handleMenuItemClick("Home")}>
-                    <img src={pai_logo} alt="Logo" />
-                </Link>
+          <ScrollToTopLink to="/">
+            <img src={pai_logo} alt="Logo" />
+          </ScrollToTopLink>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </div>
         <ul className={`navbar-menu ${isOpen ? 'active' : ''}`}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
+          <li><ScrollToTopLink to="/">Home</ScrollToTopLink></li>
+          <li><ScrollToTopLink to="/services">Services</ScrollToTopLink></li>
           <li className="submenu-parent" ref={submenuRef}>
-            <span>
+            <span onClick={() => setShowSubmenu(!showSubmenu)}>
               Investment Vehicles <FontAwesomeIcon icon={faCaretDown} />
             </span>
             <ul className={`submenu ${showSubmenu ? 'active' : ''}`}>
               <li>
-                <Link to="/alternative-investment-funds">
+                <ScrollToTopLink to="/alternative-investment-funds">
                   <FontAwesomeIcon icon={faChartLine} /> Alternative Investment Funds (AIF)
-                </Link>
+                </ScrollToTopLink>
               </li>
               <li>
-                <Link to="/portfolio-management-services">
+                <ScrollToTopLink to="/portfolio-management-services">
                   <FontAwesomeIcon icon={faBriefcase} /> Portfolio Management Services
-                </Link>
+                </ScrollToTopLink>
+              </li>
+              <li>
+                <ScrollToTopLink to="/bonds">
+                  <FontAwesomeIcon icon={faMoneyBillWave} /> Bonds
+                </ScrollToTopLink>
               </li>
             </ul>
           </li>
-          <li><Link to="/contact">Contact Us</Link></li>
+          <li><ScrollToTopLink to="/contact">Contact Us</ScrollToTopLink></li>
         </ul>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Services from './Pages/Services';
 import PortfolioManagementServices from './Pages/PortfolioManagementServices'
 import AlternativeInvestmentFunds from './Pages/AlternativeInvestmentFunds';
+import Bonds from './Pages/Bonds';
 import Contact from './Pages/Contact';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio-management-services" element={<PortfolioManagementServices />} />
           <Route path="/alternative-investment-funds" element={<AlternativeInvestmentFunds />} />
+          <Route path="/bonds" element={<Bonds />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
