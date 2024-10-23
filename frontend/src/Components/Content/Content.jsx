@@ -58,9 +58,6 @@ const Content = () => {
             <p>Your success is the heart of everything we do. We  focused on developing  partnerships, providing personalized, hands-on support  your business journey. Every client is treated with the attention and  ensuring receive customized service at all times.</p>
           </div>
         </div>
-        <div className="">
-          <button >CONTACT US</button>
-        </div>
       </div>
     </div>
   )
