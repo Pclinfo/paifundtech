@@ -4,7 +4,7 @@ import pai_logo from './Assets/pai_logo.png'
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import ia_services_img_1 from './Assets/ia_services_img_1.png'
 import financial_accounting from './Assets/financial_accounting.png'
 import compliance_regime from './Assets/compliance_regime.png'
@@ -384,7 +384,7 @@ const Services = () => {
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faXTwitter} />
               </a>
             </div>
           </div>

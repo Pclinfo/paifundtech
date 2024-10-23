@@ -9,7 +9,7 @@ import investment_funds from './Assets/investment_funds.png'
 import pai_logo from './Assets/pai_logo.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -230,7 +230,7 @@ const AlternativeInvestmentFunds = () => {
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
                             <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
-                                <FontAwesomeIcon icon={faTwitter} />
+                                <FontAwesomeIcon icon={faXTwitter} />
                             </a>
                         </div>
                     </div>

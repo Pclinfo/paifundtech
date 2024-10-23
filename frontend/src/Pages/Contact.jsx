@@ -4,7 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import pai_logo from './Assets/pai_logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
 
@@ -126,7 +126,7 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                         <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
-                            <FontAwesomeIcon icon={faTwitter} />
+                            <FontAwesomeIcon icon={faXTwitter} />
                         </a>
                     </div>
                 </div>
