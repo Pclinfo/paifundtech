@@ -10,7 +10,7 @@ const Bonds = () => {
 
 
     const handleMenuItemClick = (menuItem) => {
-        // You can add any additional logic here if needed
+
     };
 
 
@@ -19,8 +19,8 @@ const Bonds = () => {
             <div className="bonds-header-title-1">
                 <img src={bonds_img} alt="" />
                 <div className="bonds-header-title">
-                <h2>Our Bond Offerings</h2>
-                <p>At PaiFundtech, we provide a diverse range of bond investment options designed to meet the varying needs of our investors. Explore our offerings to find the perfect bond for your investment strategy.</p>
+                    <h2>Our Bond Offerings</h2>
+                    <p>At PaiFundtech, we provide a diverse range of bond investment options designed to meet the varying needs of our investors. Explore our offerings to find the perfect bond for your investment strategy.</p>
                 </div>
             </div>
             <div className="bonds-main-content-1">

@@ -1,101 +1,64 @@
-import React, { useState }  from 'react'
-import './Hero.css';
-import ia_hero_img_1 from '../Assets/ia_hero_img_1.png'
-import Modal from 'react-modal';
+import React from 'react';
+import earth_investing from '../Assets/earth_investing.webp'
 
 const Hero = () => {
-
-
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phoneNumber: '',
-    message: ''
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('http://localhost:4000/submitForm', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-      console.log(data);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phoneNumber: '',
-        message: ''
-      });
-      setIsSubmitted(true);
-      closeModal();
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
-  };
-
-
-
-
   return (
-    <div className='hero'>
-      <div className="hero-ai-img-1">
-        <img src={ia_hero_img_1} alt="" />
-        <div className="hero-ai-content">
-          <h2>Strategic Expertise and Financial Solutions to Empower Your Business</h2>
-          <p>Delivering bespoke financial solutions with integrity, expertise, and innovation to drive your business success.</p>
-          <button onClick={openModal}>Get Started</button>
-        </div>
-        <Modal isOpen={isModalOpen} onRequestClose={closeModal} className="modal-content">
-          <div className="pai-contact-form">
-            <form onSubmit={handleSubmit}>
-              <div className="pai-form-group">
-                <label>First Name</label>
-                <input type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} required />
-                <label>Last Name</label>
-                <input type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} required />
-              </div>
-              <div className="pai-form-group">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-                <label>Phone Number</label>
-                <input type="text" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} />
-              </div>
-              <div className="pai-form-group">
-                <label>Message</label>
-                <textarea name="message" placeholder="Write your message.." value={formData.message} onChange={handleChange} required></textarea>
-              </div>
-              <button type="submit">Send Message</button>
-              {isSubmitted && <p>Thank you! Your form has been submitted.</p>}
-            </form>
+    <div className="relative bg-black w-full">
+      {/* Hero Section with Background Image */}
+      <div className="relative h-[500px] lg:h-[600px] bg-gradient-to-r from-gray-800 to-gray-900">
+        {/* Background Image Container */}
+        <div
+          className="absolute inset-0 hidden sm:block"
+          style={{
+            backgroundImage: `url(${earth_investing})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center right',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.7,
+          }}
+        ></div>
+
+        {/* Mobile Background Image */}
+        <div
+          className="absolute inset-0 sm:hidden"
+          style={{
+            backgroundImage: `url(${earth_investing})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.7,
+          }}
+        ></div>
+
+        <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
+          <div className="max-w-2xl">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+              Revolutionizing Alternative Investments with Technology
+            </h1>
+            <p className="text-lg text-white mb-8">
+              Seamless Technology for Smarter Alternative Investments.
+            </p>
+            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              Explore Our Platform
+            </button>
           </div>
-        </Modal>  
+        </div>
       </div>
-      <div className="hero-ai-content-1">
-        <p>At <span className='r-c'> PaiFundtech, (Prachida Alternative Investment Fundtech)</span>, we are dedicated to providing companies with the comprehensive financial capabilities they need to excel in an increasingly competitive landscape. Through our expertise in <span className='r-c'>Tax, Audit & Assurance, and Management Consulting,</span> we equip you with actionable insights and expert guidance to streamline operations, overcome regulatory challenges, and drive sustainable growth.</p>
+
+      {/* Bottom Description Section */}
+      <div className="w-full bg-gray-100 py-12">
+        <div className="container mx-auto px-4">
+          <p className="text-gray-800 max-w-4xl mx-auto text-center sm:text-left">
+            At PAI Fundtech (Prachida Alternative Investment Fundtech), we are committed to equipping companies with the
+            comprehensive financial capabilities needed to thrive in a highly competitive landscape. As an innovative asset
+            Management Company, we leverage our expertise in Tax, Audit & Assurance, and Management Consulting to provide
+            actionable insights and expert guidance, enabling you to streamline processes, overcome compliance challenges, and
+            achieve sustainable growth.
+          </p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

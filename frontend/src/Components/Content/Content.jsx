@@ -1,66 +1,67 @@
-import React from 'react'
-import './Content.css'
-import ia_our_expertise from '../Assets/ia_our_expertise.png'
-import ia_customized_solutions from '../Assets/ia_customized_solutions.png'
-import ia_industry_expertise from '../Assets/ia_industry_expertise.png'
-import innovative_approach from '../Assets/innovative_approach.png'
-import ia_focused_approach from '../Assets/ia_focused_approach.png'
-
-
-
+import React from 'react';
+import expertise_investing from '../Assets/expertise_investing.webp'
+import vision_investment_banking_investing from '../Assets/vision_investment_banking_investing.webp'
 
 const Content = () => {
   return (
-    <div className='content'>
-      <div className="main-card-1">
-        <div className="main-card-title-1">
-          <h3>Our <span className='r-c'>Expertise</span></h3>
-        </div>
-        <div className="main-card-title-2">
-          <p>PAI Fundtech is an innovative, forward-thinking Professional Services Company specializing in delivering bespoke financial solutions tailored to meet the unique challenges of your business. We pride ourselves on being a trusted partner throughout every stage of your business journey. From formulating expert tax strategies that maximize savings and compliance to offering in-depth audit and assurance services, or providing cutting-edge management consulting to enhance operational efficiency, we are with you at every step. Our team of highly skilled industry professionals brings deep and diverse experience across multiple sectors, ensuring that your business is supported by expert hands with the highest standards of integrity and excellence.</p>
-          <img src={ia_our_expertise} alt="" />
-        </div>
-      </div>
-      <div className="main-card-1">
-        <div className="main-card-title-1">
-          <h3>Our <span className='r-c'> Vision for Investment Banking</span></h3>
-        </div>
-        <div className="main-card-title-2">
-          <p>At PaiFundtech, our vision is to seamlessly extend our expertise into the realm of investment banking, empowering businesses and individuals with innovative financial solutions. We aim to facilitate growth through strategic advisory, capital raising, mergers and acquisitions, and tailored investment strategies. Guided by integrity, excellence, and a commitment to long-term partnerships, we strive to become a trusted leader in the investment banking space, driving value and sustainable success for our clients.</p>
-        </div>
-      </div>
-      <div className="ai-content-subcard">
-        <div className="ai-content-title-1">
-          <h2>Why Choose PAI Fundtech</h2>
-          <p>Our approach goes beyond delivering solutions.  we build lasting partnerships. Here's why businesses choose us as their trusted partner:</p>
-        </div>
-        <div className="ai-content-subcard-1">
-          <div className="ia-customized-solutions">
-            <img src={ia_customized_solutions} alt="" />
-            <h3>Customized Solutions</h3>
-            <p>Every business is unique, which is why we offer tailored solutions specifically crafted to address your individual challenges and objectives. Our strategies are designed to deliver tangible, measurable outcomes that align with your business goals.</p>
-          </div>
-          <div className="ia-industry-expertise">
-            <img src={ia_industry_expertise} alt="" />
-            <h3>Industry Expertise</h3>
-            <p>Our team of experienced professionals brings deep sector knowledge across a wide range of industries, from finance and manufacturing technology  retail. This ensures that receive the highest level of expertise and practical advice that’s relevant to your industry</p>
-          </div>
-          <div className="innovative-approach">
-            <img src={innovative_approach} alt="" />
-            <h3>Innovative Approach</h3>
-            <p>We leverage the latest tools and technologies to provide cutting-edge solutions, ensuring business stays ever-changing market. Whether it’s through automation, digital transformation, or the use of advanced analytics, we help future-proof operations</p>
-          </div>
-        </div>
-        <div className="ai-content-subcard-2">
-          <div className="ia-focused-approach">
-            <img src={ia_focused_approach} alt="" />
-            <h3>Client-Focused Approach</h3>
-            <p>Your success is the heart of everything we do. We  focused on developing  partnerships, providing personalized, hands-on support  your business journey. Every client is treated with the attention and  ensuring receive customized service at all times.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+    <div className="bg-gray-100 w-full px-4 py-8 md:px-8 lg:px-12">
+      {/* Our Expertise Section */}
+      <section className="mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-navy-800 mb-8">Our Expertise</h2>
 
-export default Content
+        <div className="flex flex-col lg:flex-row items-center gap-8">
+          <div className="w-full lg:w-2/5">
+            <img
+              src={expertise_investing}
+              alt="Business meeting with people looking at charts"
+              className="w-full h-auto rounded shadow-md"
+            />
+          </div>
+
+          <div className="w-full lg:w-3/5">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              PAI Fundtech is a forward-thinking Investment Company, specializing in delivering
+              customized financial solutions designed to address the unique challenges of your business.
+              We are committed to supporting you as a dependable ally throughout every phase of your
+              business journey. Whether it's creating effective tax strategies to optimize savings and ensure
+              compliance, providing thorough audit and assurance services, or offering innovative
+              management consulting to enhance performance, we are with you every step of the way. Our
+              team of highly skilled industry professionals brings diverse experience across multiple
+              sectors, ensuring your business is supported with the highest standards of integrity and
+              excellence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Vision Section */}
+      <section>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-navy-800 mb-8">Our Vision for Investment Banking</h2>
+
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
+          <div className="w-full lg:w-3/5">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              At PAI Fundtech, we aspire to broaden our reach into investment banking,
+              offering innovative financial solutions for businesses and individuals. We aim
+              to foster growth through strategic advisory, capital raising, mergers and
+              acquisitions, and customized investing strategies. Guided by integrity,
+              excellence, and a commitment to long-term partnerships, we aspire to be a
+              trusted leader in the investment industry, delivering value and ensuring
+              sustainable success for our clients.
+            </p>
+          </div>
+
+          <div className="w-full lg:w-2/5">
+            <img
+              src={vision_investment_banking_investing}
+              alt="Light bulb with the words Our Vision"
+              className="w-full h-auto rounded shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Content;

@@ -2,11 +2,22 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home';
-import Services from './Pages/Services';
-import PortfolioManagementServices from './Pages/PortfolioManagementServices'
-import AlternativeInvestmentFunds from './Pages/AlternativeInvestmentFunds';
-import Bonds from './Pages/Bonds';
-import Contact from './Pages/Contact';
+import AlternativeInvestmentFunds from './Pages/Investments/AlternativeInvestmentFunds'
+import PortfolioManagementService from './Pages/Investments/PortfolioManagementService'
+import VentureCapital from './Pages/Our Business/VentureCapital'
+import HedgeFunds from './Pages/Our Business/HedgeFunds'
+import InsuranceFunds from './Pages/Our Business/InsuranceFunds'
+import ProjectFunds from './Pages/Our Business/ProjectFunds'
+import DebtFunds from './Pages/Our Business/DebtFunds'
+import PrivateEquityFunds from './Pages/Our Business/PrivateEquityFunds'
+import AccountingBusinessSupport from './Pages/Financial Consultant/AccountingBusinessSupport'
+import BusinessDigital from './Pages/Research Development/BusinessDigital'
+import Footer from './Components/Footer/Footer';
+
+import ContactUs from './Pages/ContactUs'
+
+
+
 
 function App() {
   return (
@@ -15,12 +26,20 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio-management-services" element={<PortfolioManagementServices />} />
-          <Route path="/alternative-investment-funds" element={<AlternativeInvestmentFunds />} />
-          <Route path="/bonds" element={<Bonds />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/investments/alternative-investment-funds" element={<AlternativeInvestmentFunds />} />
+          <Route path="/investments/portfolio-management-service" element={<PortfolioManagementService />} />
+          <Route path="/our-business/venture-capital" element={<VentureCapital />} />
+          <Route path="/our-business/hedge-funds" element={<HedgeFunds />} />
+          <Route path="/our-business/insurance-funds" element={<InsuranceFunds />} />
+          <Route path="/our-business/project-funds" element={<ProjectFunds />} />
+          <Route path="/our-business/debt-funds" element={<DebtFunds />} />
+          <Route path="/our-business/private-equity-funds" element={<PrivateEquityFunds />} />
+          <Route path="/financial-consultant/accounting-business-support" element={<AccountingBusinessSupport />} />
+          <Route path="/research-development/business-digital" element={<BusinessDigital />} />
+
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
