@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import earth_investing from '../Assets/earth_investing.webp'
 
 const Hero = () => {
@@ -32,15 +33,17 @@ const Hero = () => {
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Revolutionizing Alternative Investments with Technology
             </h1>
             <p className="text-lg text-white mb-8">
               Seamless Technology for Smarter Alternative Investments.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>

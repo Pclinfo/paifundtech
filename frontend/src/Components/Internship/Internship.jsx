@@ -13,7 +13,7 @@ const Internship = () => {
         </h2>
 
         <p className="text-center text-gray-800 mb-12 max-w-3xl mx-auto">
-          We focus on more than providing solutions; we cultivate enduring partnerships. Here's why companies choose us as their preferred partner:
+          We focus on more than providing solutions; we cultivate enduring partnerships. Here's why companies choose us as their preferred partner
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">

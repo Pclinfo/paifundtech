@@ -271,7 +271,7 @@ const Navbar = () => {
               </div>
 
 
-              <NavLink to="/contact-us" label="Contact Us" />
+              <NavLink to=" " label="Contact Us" />
             </div>
           </div>
 

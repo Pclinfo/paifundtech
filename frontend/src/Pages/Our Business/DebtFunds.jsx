@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cover_debt_funds from '../Assets/cover_debt_funds.webp'
 import wealthkit_debt_funds from '../Assets/wealthkit_debt_funds.webp'
 import debtvision_debt_funds from '../Assets/debtvision_debt_funds.webp'
@@ -58,7 +59,7 @@ const DebtFunds = () => {
     }
   ];
 
- 
+
 
 
   return (
@@ -66,37 +67,39 @@ const DebtFunds = () => {
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px]">
         <div
-                  className="absolute inset-0 hidden sm:block"
-                  style={{
-                    backgroundImage: `url(${cover_debt_funds})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center right',
-                    backgroundRepeat: 'no-repeat',
-                  }}
-                ></div>
-        
-                {/* Mobile Background Image */}
-                <div
-                  className="absolute inset-0 sm:hidden"
-                  style={{
-                    backgroundImage: `url(${cover_debt_funds})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                  }}
-                ></div>
+          className="absolute inset-0 hidden sm:block"
+          style={{
+            backgroundImage: `url(${cover_debt_funds})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center right',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
+
+        {/* Mobile Background Image */}
+        <div
+          className="absolute inset-0 sm:hidden"
+          style={{
+            backgroundImage: `url(${cover_debt_funds})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Partner with PAI Fundtech for Expert Debt Fund Strategies.
             </h1>
             <p className="text-lg text-white mb-8">
               Shaping your financial success with cutting-edge research, industry expertise, and solutions designed to optimize debt fund performance.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -143,6 +146,13 @@ const DebtFunds = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">          </h2>
 
+
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we know how crucial it is to have the right financial support when you need it. Here's why we are the best choice for your debt funding needs
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -183,6 +193,12 @@ const DebtFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">      Our Debt Funds Approach    </h2>
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we take a meticulous and personalized approach to debt funding. Here's how we work with businesses
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -225,6 +241,11 @@ const DebtFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Industries We Invest In</h2>
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              Our debt funds service a wide range of industries that require capital to fuel their growth and expansion. These include
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">

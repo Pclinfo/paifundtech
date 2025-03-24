@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import red_circle_capital_venture_capital from '../Assets/red_circle_capital_venture_capital.webp'
+import capital_clarity_venture_capital from '../Assets/capital_clarity_venture_capital.webp'
 import innovate_invest_venture_capital from '../Assets/innovate_invest_venture_capital.webp'
 import insightful_venture_capital from '../Assets/insightful_venture_capital.webp'
 import mentorship_venture_capital from '../Assets/mentorship_venture_capital.webp'
@@ -88,40 +90,60 @@ const VentureCapital = () => {
     <div className="bg-white">
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px] ">
-       <div
-                 className="absolute inset-0 hidden sm:block"
-                 style={{
-                   backgroundImage: `url(${red_circle_capital_venture_capital})`,
-                   backgroundSize: 'cover',
-                   backgroundPosition: 'center right',
-                   backgroundRepeat: 'no-repeat',
-                  
-                 }}
-               ></div>
-       
-               {/* Mobile Background Image */}
-               <div
-                 className="absolute inset-0 sm:hidden"
-                 style={{
-                   backgroundImage: `url(${red_circle_capital_venture_capital})`,
-                   backgroundSize: 'cover',
-                   backgroundPosition: 'center',
-                   backgroundRepeat: 'no-repeat',
-                 }}
-               ></div>
-       
+        <div
+          className="absolute inset-0 hidden sm:block"
+          style={{
+            backgroundImage: `url(${red_circle_capital_venture_capital})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center right',
+            backgroundRepeat: 'no-repeat',
+
+          }}
+        ></div>
+
+        {/* Mobile Background Image */}
+        <div
+          className="absolute inset-0 sm:hidden"
+          style={{
+            backgroundImage: `url(${red_circle_capital_venture_capital})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
+
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Transform Your Alternative Investment Funds Strategy with PAI Fundtech.
             </h1>
             <p className="text-lg text-white mb-8">
               We bring innovation and expertise to audits, tax solutions, and financial planning for sustainable growth.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto py-16 px-4">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2">
+            <img
+              src={capital_clarity_venture_capital}
+              alt="Investment Team"
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h2 className="text-3xl font-bold mb-4">Venture Capital Services at PAI Fundtech</h2>
+            <p className="text-gray-700">
+              At PAi Fundtech, we focus on supporting new entrepreneurs and innovators. Our Venture Capital Service offers financial assistance and expert advice to startups and businesses with growth potential. We understand how crucial timely funding is for success. That’s why we provide the resources and guidance to bring your ideas to life. Work with us to transform your vision into reality.
+            </p>
           </div>
         </div>
       </div>
@@ -149,15 +171,24 @@ const VentureCapital = () => {
       {/* Why Invest with Prachida Section */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Why Choose PAi Fundtech for Venture Capital?Why Invest in AIF with Prachida?
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Why Choose PAI Fundtech for Venture Capital?Why Invest in AIF with Prachida?
           </h2>
+
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAi Fundtech, we offer more than a financial investment, providing a reliable partnership with expert guidance and a solid investment strategy. Here’s why you should choose us
+            </p>
+          </div>
+
+
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 src: insightful_venture_capital,
                 title: 'Expertise in Finding Growth Opportunities',
-                description: 'Our team has years of experience in spotting startups that can change industries. We focus on businesses with great growth potential and the ability to expand.'
+                description: 'Our team has years of experience in spotting startups that can change industries. We focus on businesses with great growth potential and the ability to expand'
               },
               {
                 src: mentorship_venture_capital,
@@ -192,6 +223,14 @@ const VentureCapital = () => {
       {/* Our Venture Capital Approach */}
       <div className="container mx-auto py-16 px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Our Venture Capital Approach</h2>
+
+
+        <div className="container mx-auto py-2">
+          <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+            Our venture capital services focus on companies in various industries that have strong potential for innovation and growth. These include
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {ventureCapitalApproach.map((approach, index) => (
             <div key={index} className="bg-gray-100 p-6 rounded-lg text-center">

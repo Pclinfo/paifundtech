@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cover_fund_management from '../Assets/cover_fund_management.webp'
 import private_equity_fund_management from '../Assets/private_equity_fund_management.webp'
 import equity_fund_management from '../Assets/equity_fund_management.webp'
@@ -86,15 +87,17 @@ const PrivateEquityFunds = () => {
         ></div>
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Partner with PAI Fundtech for Advanced Private Equity Fund Strategies.
             </h1>
             <p className="text-lg text-white mb-8">
               Shaping the future of investments through innovative research, expert financial insights, and customized strategies that drive success
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -141,6 +144,12 @@ const PrivateEquityFunds = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">  Why Choose PAI Fundtech for Private Equity Investment?        </h2>
 
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAi Fundtech, we do more than provide capital. We work with you as a partner to help you find new opportunities and achieve lasting success
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -181,6 +190,13 @@ const PrivateEquityFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">    Our Private Equity Approach      </h2>
+
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we take a tailored and hands-on approach to private equity investments
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -223,6 +239,11 @@ const PrivateEquityFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Industries We Invest In</h2>
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              Our private equity funds focus on well-established companies in various industries that have strong growth potential. Some of the sectors we target are
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">

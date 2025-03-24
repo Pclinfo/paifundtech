@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cover_hedge_fund_management from '../Assets/cover_hedge_fund_management.webp'
 import hedge_fund_management from '../Assets/hedge_fund_management.webp'
 import partnership_hedge_fund_management from '../Assets/partnership_hedge_fund_management.webp'
@@ -91,15 +92,17 @@ const HedgeFunds = () => {
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Your Trusted Partner for Hedge Fund Services with Proven Expertise
             </h1>
             <p className="text-lg text-white mb-8">
               Strategic insights and expert guidance to optimize your hedge fund success and long-term growth.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -149,6 +152,12 @@ const HedgeFunds = () => {
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Why Choose PAI Fundtech for Hedge Fund Services?
           </h2>
 
+          <div className="container  mx-auto py-2">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we do more than just provide basic fund administration. We work closely with hedge fund managers to create solutions that meet their specific needs. Here's why fund managers trust us
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -196,6 +205,12 @@ const HedgeFunds = () => {
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Our Hedge Fund Approach
           </h2>
 
+          <div className="container  mx-auto py-2">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              We work together with fund managers and provide complete support for Hedge Fund Management
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -237,6 +252,11 @@ const HedgeFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Industries We Invest In</h2>
+          <div className="container  mx-auto py-2">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              PAI Fundtech provides Hedge Fund Management services across various sectors, including
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -254,8 +274,9 @@ const HedgeFunds = () => {
 
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Benefits of Partnering with PAi Fundtech
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Benefits of Partnering with PAI Fundtech
           </h2>
+
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -296,7 +317,7 @@ const HedgeFunds = () => {
 
       {/* Benefits of Partnering */}
       <div className="container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Benefits of Partnering with PAi Fundtech</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Benefits of Partnering with PAI Fundtech</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefitsOfPartnering.map((benefit, index) => (
             <div key={index} className="bg-blue-50 p-6 rounded-lg text-center">

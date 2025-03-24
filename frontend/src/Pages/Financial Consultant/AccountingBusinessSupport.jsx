@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import financial_advisor from '../Assets/financial_advisor.webp'
 import services_financial_advisor from '../Assets/services_financial_advisor.webp'
 import financial_accounting_financial_advisor from '../Assets/financial_accounting_financial_advisor.webp'
@@ -57,16 +58,26 @@ const AccountingBusinessSupport = () => {
         ></div>
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Partner with PAI Fundtech for expert Audit, Assurance, and Tax services
             </h1>
             <p className="text-lg text-white mb-8">
               Delivering bespoke financial solutions with integrity, expertise, and innovation to drive your business success
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-white py-12">
+        <div className="container mx-auto px-4">
+          <p className="text-gray-800 max-w-4xl mx-auto text-center sm:text-left">
+            At PAI Fundtech, we specialize in empowering businesses and individuals through comprehensive financial solutions and cutting-edge digital technologies. Whether you're an enterprise, a discerning investor, or a financial advisor, our diverse range of services is designed to cater to your evolving needs.
+          </p>
         </div>
       </div>
 
@@ -86,15 +97,6 @@ const AccountingBusinessSupport = () => {
               alt="Investment Team"
               className="w-full h-[400px] md:h-[450px] object-cover rounded-lg shadow-lg"
             />
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto py-16 px-4">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-            <p className="text-gray-700"> At PAI Fundtech, we specialize in empowering businesses and individuals through comprehensive financial solutions and cutting-edge digital technologies. Whether you're an enterprise, a discerning investor, or a financial advisor, our diverse range of services is designed to cater to your evolving needs.
-            </p>
           </div>
         </div>
       </div>

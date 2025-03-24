@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import smartconnect_project_funds from '../Assets/smartconnect_project_funds.webp'
 import seedling_project_funds from '../Assets/seedling_project_funds.webp'
 import project_funds from '../Assets/project_funds.webp'
@@ -86,15 +87,17 @@ const ProjectFunds = () => {
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Optimize Project Funds Services for Lasting Impact with PAI Fundtech
             </h1>
             <p className="text-lg text-white mb-8">
               Delivering customized financial solutions that align with your project objectives and vision.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -141,6 +144,12 @@ const ProjectFunds = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">   Why Choose PAI Fundtech for Project Funding?       </h2>
 
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we do more than just provide funding; we become your strategic partner and offer a complete approach to project financing. Here’s what makes us different
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -181,6 +190,12 @@ const ProjectFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">      Our Approach to Project Funding    </h2>
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we take a structured and hands-on approach to ensure your project's success
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -223,6 +238,11 @@ const ProjectFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Industries We Invest In</h2>
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              We specialize in funding projects across diverse sectors that demonstrate  innovation and measurable impact, including
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -240,7 +260,7 @@ const ProjectFunds = () => {
 
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Benefits of Partnering with PAi Fundtech
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Benefits of Partnering with PAI Fundtech
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">

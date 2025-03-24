@@ -36,24 +36,6 @@ const ContactUs = () => {
         }),
       });
 
-      // Option 2: Using a dedicated email-sending endpoint
-      // const response = await fetch('https://apibackend.pclinfotech.com/sendEmail', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({
-      //     to: 'pclinfotechltd@gmail.com',
-      //     subject: `Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
-      //     body: `
-      //       Name: ${formData.firstName} ${formData.lastName}
-      //       Email: ${formData.email}
-      //       Phone: ${formData.phoneNumber}
-      //       Message: ${formData.message}
-      //     `
-      //   }),
-      // });
-
       if (!response.ok) {
         throw new Error(`Server responded with status: ${response.status}`);
       }

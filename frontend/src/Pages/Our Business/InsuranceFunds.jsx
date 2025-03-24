@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import riskshield_risk_management from '../Assets/riskshield_risk_management.webp'
 import insurance_risk_management from '../Assets/insurance_risk_management.webp'
 import risktoolkit_risk_management from '../Assets/risktoolkit_risk_management.webp'
@@ -77,15 +78,17 @@ const InsuranceFunds = () => {
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Enhance Your Insurance Fund Services and Insurance Investments with PAI Fundtech's Expertise.
             </h1>
             <p className="text-lg text-white mb-8">
               Leading the way in financial solutions tailored to meet the unique needs of your insurance funds.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -131,6 +134,13 @@ const InsuranceFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">    Why Choose PAI Fundtech for Insurance Fund Services?      </h2>
+
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              At PAI Fundtech, we offer unparalleled expertise in managing Insurance Investments, providing a blend of financial acumen and industry insight. Here’s what sets us apart
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -178,6 +188,13 @@ const InsuranceFunds = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">      Our Approach to Insurance Funds    </h2>
 
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              We adopt a strategic and structured approach to insurance fund management
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -219,6 +236,13 @@ const InsuranceFunds = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Industries We Invest In</h2>
+
+          <div className="container mx-auto py-6">
+            <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
+              Our Insurance Investment services are designed to support insurance providers across various sectors, including
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">

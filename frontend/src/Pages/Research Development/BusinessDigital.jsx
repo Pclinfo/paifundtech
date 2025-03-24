@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import research_and_development from '../Assets/research_and_development.webp'
 import corporate_advisory_research_and_development from '../Assets/corporate_advisory_research_and_development.webp'
 import entry_strategy_research_and_development from '../Assets/entry_strategy_research_and_development.webp'
@@ -25,38 +26,48 @@ const BusinessDigital = () => {
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px]">
         <div
-                  className="absolute inset-0 hidden sm:block"
-                  style={{
-                    backgroundImage: `url(${research_and_development})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center right',
-                    backgroundRepeat: 'no-repeat',
-                  }}
-                ></div>
-        
-                {/* Mobile Background Image */}
-                <div
-                  className="absolute inset-0 sm:hidden"
-                  style={{
-                    backgroundImage: `url(${research_and_development})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                  }}
-                ></div>
+          className="absolute inset-0 hidden sm:block"
+          style={{
+            backgroundImage: `url(${research_and_development})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center right',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
+
+        {/* Mobile Background Image */}
+        <div
+          className="absolute inset-0 sm:hidden"
+          style={{
+            backgroundImage: `url(${research_and_development})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Collaborate with PAI Fundtech for Advanced R&D and Tailored Financial Expertise.
             </h1>
             <p className="text-lg text-white mb-8">
               Innovating your financial future with breakthrough research, expert insights, and custom solutions that fuel growth.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-white py-12">
+        <div className="container mx-auto px-4">
+          <p className="text-gray-800 max-w-4xl mx-auto text-center sm:text-left">
+            At PAI Fundtech, we combine R&D with expert financial solutions to drive growth and innovation. Our team develops strategies that address current challenges and anticipate future trends. Whether you're a business, investor, or advisor, we offer tailored solutions for sustained success.
+          </p>
         </div>
       </div>
 

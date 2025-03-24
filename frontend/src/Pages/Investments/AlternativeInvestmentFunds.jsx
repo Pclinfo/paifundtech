@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cover_alternative_investmen_funds from '../Assets/cover_alternative_investmen_funds.webp';
 import alternativeInvestmentFunds from '../Assets/alternative_investmen_funds.webp';
 import expertiseExperience from '../Assets/expertise_experience.webp';
@@ -38,15 +39,17 @@ const AlternativeInvestmentFunds = () => {
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Transform Your Alternative Investment Funds Strategy with PAI Fundtech.
             </h1>
             <p className="text-lg text-white mb-8">
               We bring innovation and expertise to audits, tax solutions, and financial planning for sustainable growth.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Explore Our Platform
-            </button>
+            <Link to="/contact-us">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Register to Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -89,6 +92,7 @@ const AlternativeInvestmentFunds = () => {
               <p className="text-gray-700 mb-4">
                 Category I AIFs prioritize investments that positively impact the economy and society. These funds primarily focus on early-stage startups, emerging businesses, and sectors deemed beneficial by government and regulatory bodies. Their investments often include socially impactful ventures, small and medium enterprises (SMEs), and infrastructure projects
               </p>
+              <h3 className="text-xl font-bold text-blue-800 mb-4">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
                 <li>Focus on Start-ups and Social Impact: Invest in new businesses with growth potential and a positive impact on society.</li>
                 <li>High-Risk, High-Reward Potential: Early-stage ventures often involve more risk but can offer higher returns</li>
@@ -106,6 +110,7 @@ const AlternativeInvestmentFunds = () => {
               <p className="text-gray-700 mb-4">
                 Category II AIFs focus on investing in companies at mid or later stages, with an emphasis on private equity, pre-IPO capital, or debt funding. These funds support businesses that have moved beyond the startup phase and need capital for growth or expansion.
               </p>
+              <h3 className="text-xl font-bold text-blue-800 mb-4">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
                 <li>Private Equity Focus: Invest in established businesses seeking funds for growth or acquisitions</li>
                 <li>Flexible Financing: Provide both equity and debt funding based on business needs.</li>
@@ -124,6 +129,7 @@ const AlternativeInvestmentFunds = () => {
               <p className="text-gray-700 mb-4">
                 Category III AIFs focus on large-scale investments, such as listed stocks, derivatives, and advanced trading strategies. These funds can use leverage and different trading methods to aim for higher returns, making them ideal for investors willing to take on more risk for potentially greater rewards
               </p>
+              <h3 className="text-xl font-bold text-blue-800 mb-4">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
                 <li>Wide Investment Options: Includes various strategies, like long-only and long-short positions, across multiple asset classes</li>
                 <li>Flexible and Dynamic: Uses leverage and derivatives to enhance returns in different market conditions</li>
