@@ -24,9 +24,9 @@ const BusinessDigital = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative h-[500px] lg:h-[600px]">
+      <div className="relative  h-[500px] lg:h-[600px]">
         <div
-          className="absolute inset-0 hidden sm:block"
+          className="absolute inset-0 bg-black/100 backdrop-blur hidden sm:block"
           style={{
             backgroundImage: `url(${research_and_development})`,
             backgroundSize: 'cover',
@@ -37,7 +37,7 @@ const BusinessDigital = () => {
 
         {/* Mobile Background Image */}
         <div
-          className="absolute inset-0 sm:hidden"
+          className="absolute inset-0  bg-black/100 backdrop-blur-sm sm:hidden"
           style={{
             backgroundImage: `url(${research_and_development})`,
             backgroundSize: 'cover',
@@ -46,9 +46,9 @@ const BusinessDigital = () => {
           }}
         ></div>
 
-        <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
+        <div className="container mx-auto  opacity-100 px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h1 className="text-3xl opacity-100 md:text-4xl font-bold text-white mb-6">
               Collaborate with PAI Fundtech for Advanced R&D and Tailored Financial Expertise.
             </h1>
             <p className="text-lg text-white mb-8">
