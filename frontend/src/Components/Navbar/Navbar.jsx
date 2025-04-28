@@ -426,7 +426,48 @@ const Navbar = () => {
               )}
             </div>
 
-            <MobileNavLink to="/rd" label="R&D" />
+             {/* Mobile R&D Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => toggleDropdown('R&D-Mobile')}
+                className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+              >
+                <span>R&D</span>
+                <svg
+                  className={`h-4 w-4 transition-transform ${activeDropdown === 'R&D-Mobile' ? 'transform rotate-180' : ''
+                    }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              {activeDropdown === 'R&D-Mobile' && (
+                <div className="mt-1 ml-4 border-l-2 border-gray-200 pl-2">
+                  {menuStructure['Research & Development'].map((item, index) => (
+                    <Link
+                      key={index}
+                      to={item.path}
+                      className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 rounded-md"
+                      onClick={() => {
+                        setActiveDropdown(null);
+                        setIsOpen(false);
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* <MobileNavLink to="/research-development/business-digital" label="R&D" /> */}
             <MobileNavLink to="/contact-us" label="Contact Us" />
           </div>
         </div>
