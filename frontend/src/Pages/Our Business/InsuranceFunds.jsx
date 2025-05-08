@@ -23,7 +23,7 @@ import regulatory_adherence_risk_management from '../Assets/regulatory_adherence
 import tailored_strategies_risk_management from '../Assets/tailored_strategies_risk_management.webp'
 import reliable_partnership_risk_management from '../Assets/reliable_partnership_risk_management.webp'
 import GetStarted from '../../Components/GetStarted/GetStarted';
-
+import { Helmet } from 'react-helmet';
 
 
 const InsuranceFunds = () => {
@@ -54,6 +54,16 @@ const InsuranceFunds = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Insurance Funds | PAI Fundtech</title>
+        <meta name="description" content="PAI Fundtech provides a range of Insurance Fund Services to help businesses manage risk and achieve financial stability through our Risk Management services and Insurance Fund services. We develop solutions customized to the specific requirements of insurance firms and investors. We focus on driving growth and long-term success. Depend on us for the expert insights your business needs." />
+        <meta name="keywords" content="Insurance Funds, Risk Management, Financial Stability, Customized Solutions, Insurance Investments, PAI Fundtech" />
+        <meta name="author" content="PAI Fundtech" />
+        <meta property="og:title" content="Insurance Funds | PAI Fundtech" />
+        <meta property="og:description" content="PAI Fundtech provides a range of Insurance Fund Services to help businesses manage risk and achieve financial stability through our Risk Management services and Insurance Fund services. We develop solutions customized to the specific requirements of insurance firms and investors. We focus on driving growth and long-term success. Depend on us for the expert insights your business needs." />
+        <meta property="og:url" content="https://www.paifundtech.com/our-business/insurance-funds" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px]">
         <div

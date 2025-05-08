@@ -23,7 +23,7 @@ import customized_debt_funds from '../Assets/customized_debt_funds.webp'
 import risk_mitigation_debt_funds from '../Assets/risk_mitigation_debt_funds.webp'
 import endowment_debt_funds from '../Assets/endowment_debt_funds.webp'
 import GetStarted from '../../Components/GetStarted/GetStarted';
-
+import { Helmet } from 'react-helmet';
 
 
 
@@ -65,6 +65,25 @@ const DebtFunds = () => {
 
   return (
     <div className="bg-white">
+        <Helmet>
+        <title>Debt Funds Services | PAI Fundtech</title>
+        <meta name="description" content="Discover expert Debt Fund Strategies from PAI Fundtech. Learn about our flexible financing options, risk management, and strategic support to help your business grow sustainably." />
+        <meta name="keywords" content="Debt Funds, PAI Fundtech, financial solutions, flexible financing, risk management, strategic support, business growth, manufacturing, production, real estate, infrastructure, retail, e-commerce, technology, IT services, energy, utilities, healthcare, pharmaceuticals, transportation, logistics" />
+        <meta name="author" content="PAI Fundtech" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Debt Funds Services | PAI Fundtech" />
+        <meta property="og:description" content="Discover expert Debt Fund Strategies from PAI Fundtech. Learn about our flexible financing options, risk management, and strategic support to help your business grow sustainably." />
+        <meta property="og:image" content="https://yourwebsite.com/path/to/cover_debt_funds.webp" />
+        <meta property="og:url" content="https://yourwebsite.com/debt-funds" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Debt Funds Services | PAI Fundtech" />
+        <meta name="twitter:description" content="Discover expert Debt Fund Strategies from PAI Fundtech. Learn about our flexible financing options, risk management, and strategic support to help your business grow sustainably." />
+        <meta name="twitter:image" content="https://yourwebsite.com/path/to/cover_debt_funds.webp" />
+        <meta name="twitter:site" content="@PAIFundtech" />
+        <meta name="twitter:creator" content="@PAIFundtech" />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px]">
         <div

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import financial_advisor from '../Assets/financial_advisor.webp';
-import banner from '../Assets/Loan/banner.webp';
+import banner from '../Assets/Loan/banner.jpg';
 import buyingOrRefinancingCommercialRealEstate from '../Assets/Loan/Buying or Refinancing Commercial Real Estate.webp';
 import commercialMortgages from '../Assets/Loan/Commercial Mortgages.webp';
 import compilanceDiagnistics from '../Assets/Loan/Compilance diagnist.webp';
@@ -23,23 +23,23 @@ const Loan = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Unlock Instant Liquidity with PAI Fundtech Loans</title>
+        <title>Unlock Instant Liquidity with PAI Fundtech Loans - Strategic Financial Solutions</title>
         <meta
           name="description"
-          content="At PAI Fundtech, we offer loans against your shares, mutual funds, and bonds — giving you instant liquidity while your assets continue to generate returns. Ideal for individuals, HNIs, and businesses."
+          content="Unlock instant liquidity with PAI Fundtech loans against shares, mutual funds, and bonds. Ideal for individuals, HNIs, and businesses seeking strategic financial solutions without liquidating investments. Our loans offer quick processing, compliance diagnostics, payroll administration, and project finance options."
         />
         <meta
           name="keywords"
-          content="PAI Fundtech, loans, shares, mutual funds, bonds, instant liquidity, financial solutions, HNIs, business support, commercial mortgages, accounting, compliance diagnostics, payroll administration"
+          content="PAI Fundtech, loans, shares, mutual funds, bonds, instant liquidity, financial solutions, HNIs, business support, commercial mortgages, accounting, compliance diagnostics, payroll administration, project finance, large-scale infrastructure, industrial projects, public infrastructure projects, debt syndication, equity assistance, risk analysis, structured funding, power plants, roads, renewable energy, capital-intensive initiatives"
         />
-        <meta property="og:title" content="Unlock Instant Liquidity with PAI Fundtech Loans" />
-        <meta property="og:description" content="At PAI Fundtech, we offer loans against your shares, mutual funds, and bonds — giving you instant liquidity while your assets continue to generate returns. Ideal for individuals, HNIs, and businesses." />
+        <meta property="og:title" content="Unlock Instant Liquidity with PAI Fundtech Loans - Strategic Financial Solutions" />
+        <meta property="og:description" content="Unlock instant liquidity with PAI Fundtech loans against shares, mutual funds, and bonds. Ideal for individuals, HNIs, and businesses seeking strategic financial solutions without liquidating investments. Our loans offer quick processing, compliance diagnostics, payroll administration, and project finance options." />
         <meta property="og:image" content={financial_advisor} />
         <meta property="og:url" content="https://paifundtech.com/financial-services/loan" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Unlock Instant Liquidity with PAI Fundtech Loans" />
-        <meta name="twitter:description" content="At PAI Fundtech, we offer loans against your shares, mutual funds, and bonds — giving you instant liquidity while your assets continue to generate returns. Ideal for individuals, HNIs, and businesses." />
+        <meta name="twitter:title" content="Unlock Instant Liquidity with PAI Fundtech Loans - Strategic Financial Solutions" />
+        <meta name="twitter:description" content="Unlock instant liquidity with PAI Fundtech loans against shares, mutual funds, and bonds. Ideal for individuals, HNIs, and businesses seeking strategic financial solutions without liquidating investments. Our loans offer quick processing, compliance diagnostics, payroll administration, and project finance options." />
         <meta name="twitter:image" content={financial_advisor} />
       </Helmet>
 
@@ -83,6 +83,8 @@ const Loan = () => {
         </div>
       </div>
 
+      {/* Rest of the content remains the same */}
+
       <div className="w-full bg-white py-12">
         <div className="container mx-auto px-4">
           <p className="text-gray-800 max-w-4xl mx-auto text-center sm:text-left leading-relaxed">
@@ -115,7 +117,7 @@ const Loan = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2">
             <img
               src={loanAgainstShares}
-              alt="Loan Against Shares"
+              alt="Loan Against Shares - Unlock Instant Liquidity with PAI Fundtech"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -128,7 +130,7 @@ const Loan = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 order-2 md:order-1">
             <img
               src={loanAgainstBond}
-              alt="Loan Against Bonds"
+              alt="Loan Against Bonds - Structured Loans for Corporate and Government Bonds with PAI Fundtech"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -234,7 +236,7 @@ const Loan = () => {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
               src={commercialMortgages}
-              alt="Expert Financial Accounting Services"
+              alt="Expert Financial Accounting Services for Commercial Mortgages - PAI Fundtech"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -309,17 +311,14 @@ const Loan = () => {
           </div>
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src= {projectFinance}
-              alt="Expert Project Finance Services"
+              src={projectFinance}
+              alt="Expert Project Finance Services - PAI Fundtech"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
         <p className="text-center mx-4 my-8 text-lg sm:text-xl leading-relaxed">
-        Secure long-term funding for your large-scale infrastructure or industrial projects with Pai 
-Fundtech’s specialized Project Finance services. We provide structured financial solutions 
-for businesses looking to develop power plants, roads, renewable energy projects, and 
-other capital-intensive initiatives. 
+          Secure long-term funding for your large-scale infrastructure or industrial projects with PAI Fundtech’s specialized Project Finance services. We provide structured financial solutions for businesses looking to develop power plants, roads, renewable energy projects, and other capital-intensive initiatives.
         </p>
       </div>
 
@@ -329,7 +328,7 @@ other capital-intensive initiatives.
           {[
             {
               src: publicInfrastructureProjects,
-              title: 'Feasibility assessment & financial structuring ',
+              title: 'Feasibility assessment & financial structuring',
               description: 'Financing for roads, bridges, and other public infrastructure projects'
             },
             {

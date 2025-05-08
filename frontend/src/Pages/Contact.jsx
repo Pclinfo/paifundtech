@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './CSS/Contact.css';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

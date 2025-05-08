@@ -23,7 +23,7 @@ import strategic_guidance_fund_management from '../Assets/strategic_guidance_fun
 import sustained_fund_management from '../Assets/sustained_fund_management.webp'
 import established_fund_management from '../Assets/established_fund_management.webp'
 import GetStarted from '../../Components/GetStarted/GetStarted';
-
+import { Helmet } from 'react-helmet';
 
 
 
@@ -64,6 +64,22 @@ const PrivateEquityFunds = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Benefits of Partnering with PAI Fundtech - Capital Infusion, Strategic Guidance, Long-Term Growth</title>
+        <meta name="description" content="Discover the benefits of partnering with PAI Fundtech for your private equity needs. Secure capital infusion, receive strategic guidance, and focus on long-term growth and profitability." />
+        <meta name="keywords" content="PAI Fundtech, private equity, capital infusion, strategic guidance, long-term growth, business growth, expansion, acquisitions, operational improvements, investment strategies, established companies, market potential, funding solutions" />
+        <meta name="author" content="PAI Fundtech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Benefits of Partnering with PAI Fundtech - Capital Infusion, Strategic Guidance, Long-Term Growth" />
+        <meta property="og:description" content="Discover the benefits of partnering with PAI Fundtech for your private equity needs. Secure capital infusion, receive strategic guidance, and focus on long-term growth and profitability." />
+        <meta property="og:image" content="https://example.com/path/to/your/image.webp" /> 
+        <meta property="og:url" content="https://example.com/our-business/private-equity-funds" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Benefits of Partnering with PAI Fundtech - Capital Infusion, Strategic Guidance, Long-Term Growth" />
+        <meta name="twitter:description" content="Discover the benefits of partnering with PAI Fundtech for your private equity needs. Secure capital infusion, receive strategic guidance, and focus on long-term growth and profitability." />
+        <meta name="twitter:image" content="https://example.com/path/to/your/image.webp" />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px]">
         <div

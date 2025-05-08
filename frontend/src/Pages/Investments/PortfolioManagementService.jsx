@@ -1,24 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cover from '../Assets/cover.webp'
-import portfolio_management_services from '../Assets/portfolio_management_services.webp'
-import discretionary from '../Assets/discretionary.webp'
-import non_discretionary from '../Assets/non_discretionary.webp'
-import advisory from '../Assets/advisory.webp'
-import expert from '../Assets/expert.webp'
-import tailored_investment_strategies from '../Assets/tailored_investment_strategies.webp'
-import advanced_risk_management from '../Assets/advanced_risk_management.webp'
-import transparent_reporting from '../Assets/transparent_reporting.webp'
-import diverse_investment_options from '../Assets/diverse_investment_options.webp'
-import financial_protection from '../Assets/financial_protection.webp'
-import tax_benefits from '../Assets/tax_benefits.webp'
-import expert_guidance from '../Assets/expert_guidance.webp'
-import guaranteed_returns from '../Assets/guaranteed_returns.webp'
-import customized_plans from '../Assets/customized_plans.webp'
+import cover from '../Assets/cover.webp';
+import portfolio_management_services from '../Assets/portfolio_management_services.webp';
+import discretionary from '../Assets/discretionary.webp';
+import non_discretionary from '../Assets/non_discretionary.webp';
+import advisory from '../Assets/advisory.webp';
+import expert from '../Assets/expert.webp';
+import tailored_investment_strategies from '../Assets/tailored_investment_strategies.webp';
+import advanced_risk_management from '../Assets/advanced_risk_management.webp';
+import transparent_reporting from '../Assets/transparent_reporting.webp';
+import diverse_investment_options from '../Assets/diverse_investment_options.webp';
+import financial_protection from '../Assets/financial_protection.webp';
+import tax_benefits from '../Assets/tax_benefits.webp';
+import expert_guidance from '../Assets/expert_guidance.webp';
+import guaranteed_returns from '../Assets/guaranteed_returns.webp';
+import customized_plans from '../Assets/customized_plans.webp';
+import { Helmet } from 'react-helmet';
 
 const PortfolioManagementService = () => {
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* Meta Tags for SEO */}
+      <Helmet>
+      <title>Portfolio Management Services by PAI Fundtech</title>
+      <meta name="title" content="Portfolio Management Services by PAI Fundtech" />
+      <meta name="description" content="Optimize Your Investments with PAI Fundtech's Portfolio Management Services. Customized strategies, expert insights, and advanced risk management to ensure sustainable growth for high-net-worth individuals, non-resident Indians, and institutional clients." />
+      <meta name="keywords" content="Portfolio Management Services, PAI Fundtech, customized investment strategies, expert portfolio management, risk management, transparent reporting, diverse investment options, financial protection, tax benefits, expert guidance, guaranteed returns, customized plans" />
+      <meta name="author" content="PAI Fundtech" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Portfolio Management Services by PAI Fundtech" />
+      <meta property="og:description" content="Customized strategies, expert insights, and advanced risk management to ensure sustainable growth for high-net-worth individuals, non-resident Indians, and institutional clients." />
+      <meta property="og:image" content={cover} />
+      <meta property="og:url" content="https://yourwebsite.com/investments/portfolio-management-service" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Portfolio Management Services by PAI Fundtech" />
+      <meta name="twitter:description" content="Customized strategies, expert insights, and advanced risk management to ensure sustainable growth for high-net-worth individuals, non-resident Indians, and institutional clients." />
+      <meta name="twitter:image" content={cover} />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white py-12 md:py-16 lg:py-20 mb-12 rounded-lg overflow-hidden">
         {/* Responsive background image with better positioning */}
@@ -60,7 +78,6 @@ const PortfolioManagementService = () => {
               <li>• PMS providers design customized investment portfolios that may incorporate stocks, bonds, and various securities, aligning with the client's individual financial objectives and risk preferences</li>
               <li>• The service is fee-based, with charges typically calculated as a percentage of the total assets under management (AUM).</li>
               <li>• In India, PMS providers offer various investment strategies, such as value investing, growth investing, income-focused strategies, and quantitative approaches. They consistently keep clients informed about portfolio performance and aim to achieve robust returns while effectively managing risk</li>
-
             </ul>
           </div>
         </div>
@@ -162,22 +179,22 @@ const PortfolioManagementService = () => {
             },
             {
               title: 'Tax Benefits',
-              description: 'Take advantage of possible tax benefits from your insurance investments',
+              description: 'Take advantage of possible tax benefits from your investment strategies',
               src: tax_benefits
             },
             {
               title: 'Expert Guidance',
-              description: 'Our experienced advisors help you choose the best insurance solutions for long-term financial health',
+              description: 'Our experienced advisors help you choose the best investment solutions for long-term financial health',
               src: expert_guidance
             },
             {
               title: 'Guaranteed Returns',
-              description: 'Benefit from consistent returns while enjoying the security of insurance.',
+              description: 'Benefit from consistent returns while enjoying the security of your investments.',
               src: guaranteed_returns
             },
             {
               title: 'Customized Plans',
-              description: 'We offer a wide range of insurance options tailored to meet your unique needs.',
+              description: 'We offer a wide range of investment options tailored to meet your unique needs.',
               src: customized_plans
             }
           ].map((feature, index) => (

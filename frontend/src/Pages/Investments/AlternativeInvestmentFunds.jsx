@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import cover_alternative_investmen_funds from '../Assets/cover_alternative_investmen_funds.webp';
 import alternativeInvestmentFunds from '../Assets/alternative_investmen_funds.webp';
@@ -13,9 +14,22 @@ import transparentReporting from '../Assets/transparent_reporting.webp';
 
 const AlternativeInvestmentFunds = () => {
   return (
-    <div className="bg-white ">
-      <div className="relative h-[500px] lg:h-[600px]">
+    <div className="bg-white">
+      <Helmet>
+        <title>Alternative Investment Funds | PAI Fundtech</title>
+        <meta name="description" content="Explore the world of Alternative Investment Funds with PAI Fundtech. Learn about different categories and why choosing Prachida is the right decision for your financial growth." />
+        <meta name="keywords" content="Alternative Investment Funds, AIF, Category I AIFs, Category II AIFs, Category III AIFs, PAI Fundtech, Prachida, Investment Strategies, Due Diligence, Fund Management, Transparency" />
+        <meta property="og:title" content="Alternative Investment Funds | PAI Fundtech" />
+        <meta property="og:description" content="Explore the world of Alternative Investment Funds with PAI Fundtech. Learn about different categories and why choosing Prachida is the right decision for your financial growth." />
+        <meta property="og:image" content={cover_alternative_investmen_funds} />
+        <meta property="og:url" content="https://yourwebsite.com/investments/alternative-investment-funds" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alternative Investment Funds | PAI Fundtech" />
+        <meta name="twitter:description" content="Explore the world of Alternative Investment Funds with PAI Fundtech. Learn about different categories and why choosing Prachida is the right decision for your financial growth." />
+        <meta name="twitter:image" content={cover_alternative_investmen_funds} />
+      </Helmet>
 
+      <div className="relative h-[500px] lg:h-[600px]">
         <div
           className="absolute inset-0 hidden sm:block"
           style={{
@@ -69,7 +83,7 @@ const AlternativeInvestmentFunds = () => {
               What Are Alternative Investment Funds?
             </h2>
             <p className="text-gray-700 mb-4">
-              Alternative Investment Funds (AIF) are investment options that gather money from investors to invest in assets outside the usual categories like stocks, bonds, and cash. AIFs typically allocate funds to alternative assets such as private equity, hedge funds, venture capital, real estate, commodities, and other non-conventional investments
+              Alternative Investment Funds (AIF) are investment options that gather money from investors to invest in assets outside the usual categories like stocks, bonds, and cash. AIFs typically allocate funds to alternative assets such as private equity, hedge funds, venture capital, real estate, commodities, and other non-conventional investments.
             </p>
             <p className="text-gray-700">
               These funds are great for investors who want to diversify their portfolios and aim for higher returns using alternative strategies.
@@ -90,17 +104,17 @@ const AlternativeInvestmentFunds = () => {
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-bold text-blue-800 mb-4">1. Category I AIFs</h3>
               <p className="text-gray-700 mb-4">
-                Category I AIFs prioritize investments that positively impact the economy and society. These funds primarily focus on early-stage startups, emerging businesses, and sectors deemed beneficial by government and regulatory bodies. Their investments often include socially impactful ventures, small and medium enterprises (SMEs), and infrastructure projects
+                Category I AIFs prioritize investments that positively impact the economy and society. These funds primarily focus on early-stage startups, emerging businesses, and sectors deemed beneficial by government and regulatory bodies. Their investments often include socially impactful ventures, small and medium enterprises (SMEs), and infrastructure projects.
               </p>
               <h3 className="text-xl font-bold text-blue-800 mb-4">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
                 <li>Focus on Start-ups and Social Impact: Invest in new businesses with growth potential and a positive impact on society.</li>
-                <li>High-Risk, High-Reward Potential: Early-stage ventures often involve more risk but can offer higher returns</li>
+                <li>High-Risk, High-Reward Potential: Early-stage ventures often involve more risk but can offer higher returns.</li>
                 <li>Targeted Sectors: Focus includes innovation, infrastructure, and small businesses (SMEs).</li>
               </ul>
               <h3 className="text-xl font-bold text-blue-800 mb-4">Popularity:</h3>
               <p className="text-gray-700 mb-4">
-                Category I AIFs are popular with investors seeking long-term growth in emerging markets or focusing on socially responsible investments
+                Category I AIFs are popular with investors seeking long-term growth in emerging markets or focusing on socially responsible investments.
               </p>
             </div>
 
@@ -112,28 +126,27 @@ const AlternativeInvestmentFunds = () => {
               </p>
               <h3 className="text-xl font-bold text-blue-800 mb-4">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Private Equity Focus: Invest in established businesses seeking funds for growth or acquisitions</li>
+                <li>Private Equity Focus: Invest in established businesses seeking funds for growth or acquisitions.</li>
                 <li>Flexible Financing: Provide both equity and debt funding based on business needs.</li>
                 <li>Diverse Investments: Include private equity, real estate, and distressed assets.</li>
-                <h3 className="text-xl font-bold text-blue-800 mb-4">Popularity:</h3>
-                <p className="text-gray-700 mb-4">
-                  Category II AIFs are popular among investors aiming for stable growth with moderate to high risk, often focusing on mature markets
-                </p>
               </ul>
-
+              <h3 className="text-xl font-bold text-blue-800 mb-4">Popularity:</h3>
+              <p className="text-gray-700 mb-4">
+                Category II AIFs are popular among investors aiming for stable growth with moderate to high risk, often focusing on mature markets.
+              </p>
             </div>
 
             {/* Category III AIFs */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-bold text-blue-800 mb-4">3. Category III AIFs</h3>
               <p className="text-gray-700 mb-4">
-                Category III AIFs focus on large-scale investments, such as listed stocks, derivatives, and advanced trading strategies. These funds can use leverage and different trading methods to aim for higher returns, making them ideal for investors willing to take on more risk for potentially greater rewards
+                Category III AIFs focus on large-scale investments, such as listed stocks, derivatives, and advanced trading strategies. These funds can use leverage and different trading methods to aim for higher returns, making them ideal for investors willing to take on more risk for potentially greater rewards.
               </p>
               <h3 className="text-xl font-bold text-blue-800 mb-4">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Wide Investment Options: Includes various strategies, like long-only and long-short positions, across multiple asset classes</li>
-                <li>Flexible and Dynamic: Uses leverage and derivatives to enhance returns in different market conditions</li>
-                <li>For Experienced Investors: Best suited for those who understand market complexities and can handle volatility</li>
+                <li>Wide Investment Options: Includes various strategies, like long-only and long-short positions, across multiple asset classes.</li>
+                <li>Flexible and Dynamic: Uses leverage and derivatives to enhance returns in different market conditions.</li>
+                <li>For Experienced Investors: Best suited for those who understand market complexities and can handle volatility.</li>
               </ul>
               <h3 className="text-xl font-bold text-blue-800 mb-4">Popularity:</h3>
               <p className="text-gray-700 mb-4">
@@ -144,7 +157,6 @@ const AlternativeInvestmentFunds = () => {
         </div>
       </div>
 
-
       {/* Why Choose Prachida Section */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">
@@ -152,21 +164,21 @@ const AlternativeInvestmentFunds = () => {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {[
+          {[ 
             {
               src: expertiseExperience,
               title: 'Expertise & Experience',
-              description: 'Our team includes experts with many years of experience in finance, technology, and management consulting'
+              description: 'Our team includes experts with many years of experience in finance, technology, and management consulting.'
             },
             {
               src: personalizedSolutions,
               title: 'Personalized Solutions',
-              description: 'We know that each client is different, so we provide solutions designed to meet your specific goals and needs'
+              description: 'We know that each client is different, so we provide solutions designed to meet your specific goals and needs.'
             },
             {
               src: commitmentExcellence,
               title: 'Commitment to Excellence',
-              description: 'At Prachida, we are dedicated to offering the best service and delivering excellent results for our clients'
+              description: 'At Prachida, we are dedicated to offering the best service and delivering excellent results for our clients.'
             }
           ].map((item, index) => (
             <div key={index} className="text-center p-6 bg-white rounded-lg shadow-md">
@@ -190,7 +202,7 @@ const AlternativeInvestmentFunds = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
+            {[ 
               {
                 src: expertise,
                 title: 'Expertise in Alternative Investments',
@@ -209,12 +221,12 @@ const AlternativeInvestmentFunds = () => {
               {
                 src: activeFundManagement,
                 title: 'Active Fund Management',
-                description: 'Our fund managers closely watch and manage the portfolios, making smart decisions based on market conditions and the interests of investors'
+                description: 'Our fund managers closely watch and manage the portfolios, making smart decisions based on market conditions and the interests of investors.'
               },
               {
                 src: transparentReporting,
                 title: 'Transparent Reporting',
-                description: 'We believe in being fully transparent. Investors receive regular reports with detailed information about fund performance, asset distribution, and market outlook'
+                description: 'We believe in being fully transparent. Investors receive regular reports with detailed information about fund performance, asset distribution, and market outlook.'
               }
             ].map((item, index) => (
               <div key={index} className="text-center p-6 bg-white rounded-lg shadow-md">
@@ -230,7 +242,6 @@ const AlternativeInvestmentFunds = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

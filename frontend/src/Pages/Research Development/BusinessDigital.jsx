@@ -1,31 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import research_and_development from '../Assets/research_and_development.webp'
-import corporate_advisory_research_and_development from '../Assets/corporate_advisory_research_and_development.webp'
-import entry_strategy_research_and_development from '../Assets/entry_strategy_research_and_development.webp'
-import debt_restructuring_research_and_development from '../Assets/debt_restructuring_research_and_development.webp'
-import setup_assistance_research_and_development from '../Assets/setup_assistance_research_and_development.webp'
-import secretarial_compliance_research_and_development from '../Assets/secretarial_compliance_research_and_development.webp'
-import mergers_acquisitions_research_and_development from '../Assets/mergers_acquisitions_research_and_development.webp'
-import data_analytics_research_and_development from '../Assets/data_analytics_research_and_development.webp'
-import digital_solutions_research_and_development from '../Assets/digital_solutions_research_and_development.webp'
-import digital_transformation_research_and_development from '../Assets/digital_transformation_research_and_development.webp'
-import it_security_research_and_development from '../Assets/it_security_research_and_development.webp'
-import cloud_computing_research_and_development from '../Assets/cloud_computing_research_and_development.webp'
-import backup_recovery_research_and_development from '../Assets/backup_recovery_research_and_development.webp'
+import { Helmet } from 'react-helmet';
+import research_and_development from '../Assets/research_and_development.webp';
+import corporate_advisory_research_and_development from '../Assets/corporate_advisory_research_and_development.webp';
+import entry_strategy_research_and_development from '../Assets/entry_strategy_research_and_development.webp';
+import debt_restructuring_research_and_development from '../Assets/debt_restructuring_research_and_development.webp';
+import setup_assistance_research_and_development from '../Assets/setup_assistance_research_and_development.webp';
+import secretarial_compliance_research_and_development from '../Assets/secretarial_compliance_research_and_development.webp';
+import mergers_acquisitions_research_and_development from '../Assets/mergers_acquisitions_research_and_development.webp';
+import data_analytics_research_and_development from '../Assets/data_analytics_research_and_development.webp';
+import digital_solutions_research_and_development from '../Assets/digital_solutions_research_and_development.webp';
+import digital_transformation_research_and_development from '../Assets/digital_transformation_research_and_development.webp';
+import it_security_research_and_development from '../Assets/it_security_research_and_development.webp';
+import cloud_computing_research_and_development from '../Assets/cloud_computing_research_and_development.webp';
+import backup_recovery_research_and_development from '../Assets/backup_recovery_research_and_development.webp';
 import GetStarted from '../../Components/GetStarted/GetStarted';
 
-
-
-
-
 const BusinessDigital = () => {
-
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Business Digital - PAI Fundtech</title>
+        <meta name="description" content="Innovate your financial future with PAI Fundtech's advanced R&D and tailored financial expertise. Get expert solutions and strategies for growth." />
+        <meta name="keywords" content="R&D, financial solutions, business growth, Corporate Advisory, Entry Strategy, Insolvency and Restructuring Management, Factory Set-Up Support, Secretarial Compliance, Mergers & Acquisitions, Data Analytics, Digital Solutions, Digital Transformation, IT Security, Cloud Computing, Backup and Recovery" />
+      </Helmet>
+
       {/* Hero Section */}
-      <div className="relative  h-[500px] lg:h-[600px]">
+      <div className="relative h-[500px] lg:h-[600px]">
         <div
           className="absolute inset-0 bg-black/100 backdrop-blur hidden sm:block"
           style={{
@@ -38,7 +39,7 @@ const BusinessDigital = () => {
 
         {/* Mobile Background Image */}
         <div
-          className="absolute inset-0  bg-black/100 backdrop-blur-sm sm:hidden"
+          className="absolute inset-0 bg-black/100 backdrop-blur-sm sm:hidden"
           style={{
             backgroundImage: `url(${research_and_development})`,
             backgroundSize: 'cover',
@@ -47,7 +48,7 @@ const BusinessDigital = () => {
           }}
         ></div>
 
-        <div className="container mx-auto  opacity-100 px-4 relative z-10 flex flex-col justify-center h-full">
+        <div className="container mx-auto opacity-100 px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
             <h1 className="text-3xl opacity-100 md:text-4xl font-bold text-white mb-6">
               Collaborate with PAI Fundtech for Advanced R&D and Tailored Financial Expertise.
@@ -75,7 +76,7 @@ const BusinessDigital = () => {
       {/* Why Invest with Prachida Section */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">          </h2>
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Why Invest with PAI Fundtech?</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -96,7 +97,7 @@ const BusinessDigital = () => {
               },
               {
                 src: setup_assistance_research_and_development,
-                title: 'Factory Set-Up Support:',
+                title: 'Factory Set-Up Support',
                 description: 'We provide full support for setting up operations across India, including location selection and obtaining necessary government clearances. Our services involve liaising with RBI, SIA, ROC, FCRA, and the Ministry of Environment and Forests, ensuring smooth compliance throughout the setup process'
               },
               {
@@ -126,7 +127,7 @@ const BusinessDigital = () => {
 
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">  Digital Automation and Transformation  </h2>
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Digital Automation and Transformation</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[

@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import red_circle_capital_venture_capital from '../Assets/red_circle_capital_venture_capital.webp'
-import capital_clarity_venture_capital from '../Assets/capital_clarity_venture_capital.webp'
-import innovate_invest_venture_capital from '../Assets/innovate_invest_venture_capital.webp'
-import insightful_venture_capital from '../Assets/insightful_venture_capital.webp'
-import mentorship_venture_capital from '../Assets/mentorship_venture_capital.webp'
-import safeguard_venture_capital from '../Assets/safeguard_venture_capital.webp'
-import networking_opportunities_venture_capital from '../Assets/networking_opportunities_venture_capital.webp'
-import techdev_venture_capital from '../Assets/techdev_venture_capital.webp'
-import retail_venture_capital from '../Assets/retail_venture_capital.webp'
-import biohealth_venture_capital from '../Assets/biohealth_venture_capital.webp'
-import financetech_venture_capital from '../Assets/financetech_venture_capital.webp'
-import e_commerce_venture_capital from '../Assets/e_commerce_venture_capital.webp'
-import automation_venture_capital from '../Assets/automation_venture_capital.webp'
-import eco_friendly_venture_capital from '../Assets/eco_friendly_venture_capital.webp'
+import { Helmet } from 'react-helmet';
+import red_circle_capital_venture_capital from '../Assets/red_circle_capital_venture_capital.webp';
+import capital_clarity_venture_capital from '../Assets/capital_clarity_venture_capital.webp';
+import innovate_invest_venture_capital from '../Assets/innovate_invest_venture_capital.webp';
+import insightful_venture_capital from '../Assets/insightful_venture_capital.webp';
+import mentorship_venture_capital from '../Assets/mentorship_venture_capital.webp';
+import safeguard_venture_capital from '../Assets/safeguard_venture_capital.webp';
+import networking_opportunities_venture_capital from '../Assets/networking_opportunities_venture_capital.webp';
+import techdev_venture_capital from '../Assets/techdev_venture_capital.webp';
+import retail_venture_capital from '../Assets/retail_venture_capital.webp';
+import biohealth_venture_capital from '../Assets/biohealth_venture_capital.webp';
+import financetech_venture_capital from '../Assets/financetech_venture_capital.webp';
+import e_commerce_venture_capital from '../Assets/e_commerce_venture_capital.webp';
+import automation_venture_capital from '../Assets/automation_venture_capital.webp';
+import eco_friendly_venture_capital from '../Assets/eco_friendly_venture_capital.webp';
 import GetStarted from '../../Components/GetStarted/GetStarted';
-
 
 const VentureCapital = () => {
   const industries = [
@@ -89,8 +89,14 @@ const VentureCapital = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>PAI Fundtech Venture Capital Services</title>
+        <meta name="description" content="Discover how PAI Fundtech's Venture Capital services can transform your alternative investment funds strategy. Invest in innovation with us." />
+        <meta name="keywords" content="venture capital, alternative investment funds, startup funding, technology software development, HealthTech, FinTech, E-commerce, automation, clean energy, sustainable growth" />
+      </Helmet>
+
       {/* Hero Section */}
-      <div className="relative h-[500px] lg:h-[600px] ">
+      <div className="relative h-[500px] lg:h-[600px]">
         <div
           className="absolute inset-0 hidden sm:block"
           style={{
@@ -98,7 +104,6 @@ const VentureCapital = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center right',
             backgroundRepeat: 'no-repeat',
-
           }}
         ></div>
 
@@ -112,7 +117,6 @@ const VentureCapital = () => {
             backgroundRepeat: 'no-repeat',
           }}
         ></div>
-
 
         <div className="container mx-auto px-4 relative z-10 flex flex-col justify-center h-full">
           <div className="max-w-2xl">
@@ -136,19 +140,18 @@ const VentureCapital = () => {
           <div className="md:w-1/2">
             <img
               src={capital_clarity_venture_capital}
-              alt="Investment Team"
+              alt="PAI Fundtech Investment Team Providing Capital Clarity"
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
             />
           </div>
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <h2 className="text-3xl font-bold mb-4">Venture Capital Services at PAI Fundtech</h2>
             <p className="text-gray-700">
-              At PAi Fundtech, we focus on supporting new entrepreneurs and innovators. Our Venture Capital Service offers financial assistance and expert advice to startups and businesses with growth potential. We understand how crucial timely funding is for success. That’s why we provide the resources and guidance to bring your ideas to life. Work with us to transform your vision into reality.
+              At PAI Fundtech, we focus on supporting new entrepreneurs and innovators. Our Venture Capital Service offers financial assistance and expert advice to startups and businesses with growth potential. We understand how crucial timely funding is for success. That’s why we provide the resources and guidance to bring your ideas to life. Work with us to transform your vision into reality.
             </p>
           </div>
         </div>
       </div>
-
 
       {/* What is Venture Capital */}
       <div className="container mx-auto py-16 px-4">
@@ -162,34 +165,30 @@ const VentureCapital = () => {
           <div className="md:w-1/2">
             <img
               src={innovate_invest_venture_capital}
-              alt="Investment Team"
+              alt="Investment Team Innovating and Investing"
               className="w-full h-full object-cover"
             />
           </div>
         </div>
       </div>
 
-      {/* Why Invest with Prachida Section */}
+      {/* Why Invest with PAI Fundtech Section */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">Why Choose PAI Fundtech for Venture Capital?Why Invest in AIF with Prachida?
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-12">
+            Why Choose PAI Fundtech for Venture Capital?
           </h2>
-
-
           <div className="container mx-auto py-6">
             <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
-              At PAi Fundtech, we offer more than a financial investment, providing a reliable partnership with expert guidance and a solid investment strategy. Here’s why you should choose us
+              At PAI Fundtech, we offer more than a financial investment, providing a reliable partnership with expert guidance and a solid investment strategy. Here’s why you should choose us:
             </p>
           </div>
-
-
-
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 src: insightful_venture_capital,
                 title: 'Expertise in Finding Growth Opportunities',
-                description: 'Our team has years of experience in spotting startups that can change industries. We focus on businesses with great growth potential and the ability to expand'
+                description: 'Our team has years of experience in spotting startups that can change industries. We focus on businesses with great growth potential and the ability to expand.'
               },
               {
                 src: mentorship_venture_capital,
@@ -199,12 +198,12 @@ const VentureCapital = () => {
               {
                 src: safeguard_venture_capital,
                 title: 'Risk Mitigation & Financial Insight',
-                description: 'We understand the investment world and help reduce risks through Risk Management. We carefully check all details. We make sure your business is ready for success, even in tough market conditions.'
+                description: 'We understand the investment world and help reduce risks through Risk Management. We carefully check all details to ensure your business is ready for success, even in tough market conditions.'
               },
               {
                 src: networking_opportunities_venture_capital,
-                title: 'Risk Mitigation & Financial Insight',
-                description: 'We understand the investment world and help reduce risks through Risk Management. We carefully check all details. We make sure your business is ready for success, even in tough market conditions.'
+                title: 'Networking Opportunities',
+                description: 'Leverage our extensive network of investors, partners, and advisors to access valuable industry advice and opportunities.'
               }
             ].map((item, index) => (
               <div key={index} className="text-center p-6 bg-white rounded-lg shadow-md">
@@ -224,14 +223,11 @@ const VentureCapital = () => {
       {/* Our Venture Capital Approach */}
       <div className="container mx-auto py-16 px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Our Venture Capital Approach</h2>
-
-
         <div className="container mx-auto py-2">
           <p className="text-gray-800 max-w-4xl mx-auto text-center py-2">
-            Our venture capital services focus on companies in various industries that have strong potential for innovation and growth. These include
+            Our venture capital services focus on companies in various industries that have strong potential for innovation and growth. These include:
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {ventureCapitalApproach.map((approach, index) => (
             <div key={index} className="bg-gray-100 p-6 rounded-lg text-center">
@@ -251,7 +247,7 @@ const VentureCapital = () => {
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
                 <img
                   src={industry.image}
-                  alt={industry.title}
+                  alt={`${industry.title} Investment Opportunities`}
                   className="w-full h-48 object-cover mb-4 rounded-lg"
                 />
                 <h3 className="font-bold">{industry.title}</h3>
@@ -263,7 +259,7 @@ const VentureCapital = () => {
 
       {/* Benefits of Partnering */}
       <div className="container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Benefits of Partnering with PAi Fundtech</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Benefits of Partnering with PAI Fundtech</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefitsOfPartnering.map((benefit, index) => (
             <div key={index} className="bg-blue-50 p-6 rounded-lg text-center">

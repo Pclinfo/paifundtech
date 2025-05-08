@@ -18,7 +18,7 @@ import derivatives_hedge_fund_management from '../Assets/derivatives_hedge_fund_
 import private_equity_hedge_fund_management from '../Assets/private_equity_hedge_fund_management.webp'
 import emerging_markets_hedge_fund_management from '../Assets/emerging_markets_hedge_fund_management.webp'
 import GetStarted from '../../Components/GetStarted/GetStarted';
-
+import { Helmet } from 'react-helmet';
 
 
 
@@ -68,6 +68,26 @@ const HedgeFunds = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Hedge Funds | PAI Fundtech</title>
+        <meta name="description" content="Hedge Funds | PAI Fundtech" />
+        <meta name="keywords" content="Hedge Funds, PAI Fundtech, Hedge Fund Management, Hedge Fund Services, Hedge Fund Advisory, Hedge Fund Strategy" />
+        <meta name="author" content="PAI Fundtech" /> 
+        <meta property="og:title" content="Hedge Funds | PAI Fundtech" />
+        <meta property="og:description" content="Hedge Funds | PAI Fundtech" />
+        <meta property="og:image" content="https://www.paifundtech.com/images/cover_hedge_fund_management.webp" />
+        <meta property="og:url" content="https://www.paifundtech.com/our-business/hedge-funds" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hedge Funds | PAI Fundtech" />
+        <meta name="twitter:description" content="Hedge Funds | PAI Fundtech" />
+        <meta name="twitter:image" content="https://www.paifundtech.com/images/cover_hedge_fund_management.webp" />
+        <meta name="twitter:url" content="https://www.paifundtech.com/our-business/hedge-funds" />
+        <link rel="canonical" href="https://www.paifundtech.com/our-business/hedge-funds" />
+        <meta name="robots" content="index, follow" />
+
+
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px] ">
         <div
