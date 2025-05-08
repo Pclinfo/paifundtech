@@ -25,14 +25,14 @@ const ContactUs = () => {
 
     try {
       // Option 1: Using your existing API endpoint but adding email destination
-      const response = await fetch('http://localhost:4000/submitForm', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/submitForm`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           ...formData,
-          emailTo: 'mbsamu222@gmail.com' 
+          emailTo: 'nithishrish2@gmail.com' 
         }),
       });
 
@@ -81,7 +81,7 @@ const ContactUs = () => {
             <ul className="space-y-6">
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
-                <span>pclinfotechltd@gmail.com</span>
+                <span>prachidaaiftech@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" />
@@ -192,7 +192,7 @@ const ContactUs = () => {
 
               {isSubmitted && (
                 <p className="text-green-600 text-center mt-4">
-                  Thank you! Your message has been sent to pclinfotechltd@gmail.com.
+                  Thank you! Your message has been sent to prachidaaiftech@gmail.com
                 </p>
               )}
 

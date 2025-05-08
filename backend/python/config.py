@@ -1,0 +1,8 @@
+DB_NAME = "PAIFundTech"
+DB_USER = "postgres"
+DB_PASSWORD = "9514"
+DB_HOST = "147.79.66.39"
+DB_PORT = "5432"
+gmail_users = "developer.pclinfotech@gmail.com"
+gmail_passwords = "qlwv swvc ujzd nlis"
+sent_email = "prachidaaiftech@gmail.com"

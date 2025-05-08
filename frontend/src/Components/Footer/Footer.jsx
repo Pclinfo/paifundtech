@@ -39,10 +39,10 @@ const Footer = () => {
                     <div className="flex-1 mx-5 mb-8 md:text-left text-center">
                         <h4 className="font-semibold mb-5">About Us</h4>
                         <ul className="list-none p-0">
-                            <li className="mb-3"><Link to="/home" className="no-underline text-gray-400 hover:text-[#D33333]">Home</Link></li>
-                            <li className="mb-3"><Link to="/services" className="no-underline text-gray-400 hover:text-[#D33333]">Services</Link></li>
-                            <li className="mb-3"><Link to="/investments vehicles" className="no-underline text-gray-400 hover:text-[#D33333]">Investments Vehicles</Link></li>
-                            <li className="mb-3"><Link to="/contact" className="no-underline text-gray-400 hover:text-[#D33333]">Contact Us</Link></li>
+                            <li className="mb-3"><Link to="/" className="no-underline text-gray-400 hover:text-[#D33333]">Home</Link></li>
+                            <li className="mb-3"><Link to="/investments/alternative-investment-funds" className="no-underline text-gray-400 hover:text-[#D33333]">Alternative Investment Funds</Link></li>
+                            <li className="mb-3"><Link to="/investments/portfolio-management-service" className="no-underline text-gray-400 hover:text-[#D33333]">Portfolio Management Service</Link></li>
+                            <li className="mb-3"><Link to="/contact-us" className="no-underline text-gray-400 hover:text-[#D33333]">Contact Us</Link></li>
                         </ul>
                     </div>
                     

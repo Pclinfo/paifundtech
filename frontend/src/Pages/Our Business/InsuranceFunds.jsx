@@ -22,6 +22,7 @@ import expert_insights_risk_management from '../Assets/expert_insights_risk_mana
 import regulatory_adherence_risk_management from '../Assets/regulatory_adherence_risk_management.webp'
 import tailored_strategies_risk_management from '../Assets/tailored_strategies_risk_management.webp'
 import reliable_partnership_risk_management from '../Assets/reliable_partnership_risk_management.webp'
+import GetStarted from '../../Components/GetStarted/GetStarted';
 
 
 
@@ -307,17 +308,7 @@ const InsuranceFunds = () => {
 
 
       {/* Get Started Section */}
-      <div className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">How to Get Started</h2>
-          <p className="max-w-2xl mx-auto mb-8">
-            If your business is poised for growth and you're looking for the right investment partner, PAi Fundtech is here to help. Our team of experienced professionals will guide you through the process and offer the financial and strategic support you need to take your business to the next level.
-          </p>
-          <button className="bg-white text-blue-700 px-8 py-3 rounded-full hover:bg-blue-100 transition">
-            Contact Us Today
-          </button>
-        </div>
-      </div>
+      <GetStarted />
     </div>
   );
 }

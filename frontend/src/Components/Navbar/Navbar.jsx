@@ -60,6 +60,9 @@ const Navbar = () => {
       { label: 'Debt Funds', path: '/our-business/debt-funds' },
       { label: 'Private Equity Funds', path: '/our-business/private-equity-funds' }
     ],
+    'Financial Services': [
+      { label: 'Loan', path: '/financial-services/loan' }
+    ],
     'Financial Consultant': [
       { label: 'Accounting & Business Support', path: '/financial-consultant/accounting-business-support' }
     ],
@@ -87,7 +90,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden custom-md:block">
             <div className="ml-10 flex items-center space-x-8">
               <NavLink to="/" label="Home" />
 
@@ -167,6 +170,51 @@ const Navbar = () => {
                   <div className="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
                     <div className="py-1">
                       {menuStructure['Our Business'].map((item, index) => (
+                        <Link
+                          key={index}
+                          to={item.path}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+              {/* Financial Services Dropdown */}
+             
+              <div
+                className="relative"
+                ref={(ref) => registerDropdownRef('Financial Services', ref)}
+              >
+                <button
+                  onClick={() => toggleDropdown('Financial Services')}
+                  className={`text-base font-medium inline-flex items-center ${activeDropdown === 'Financial Services'
+                    ? 'text-blue-600 border-b-2 border-blue-600 pb-2'
+                    : 'text-gray-800 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 hover:pb-2'
+                    }`}
+                >
+                  Financial Services
+                  <svg
+                    className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === 'Financial Services' ? 'transform rotate-180' : ''
+                      }`}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+                {activeDropdown === 'Financial Services' && (
+                  <div className="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                    <div className="py-1">
+                      {menuStructure['Financial Services'].map((item, index) => (
                         <Link
                           key={index}
                           to={item.path}
@@ -271,12 +319,12 @@ const Navbar = () => {
               </div>
 
 
-              <NavLink to=" " label="Contact Us" />
+              <NavLink to="/contact-us" label="Contact Us" />
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="custom-md:hidden">
             <button
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -302,7 +350,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="custom-md:hidden bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <MobileNavLink to="/" label="Home" />
 
@@ -385,7 +433,46 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-
+            {/* Mobile Financial Services Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => toggleDropdown('Financial Services-Mobile')}
+                className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+              >
+                <span>Financial Services</span>
+                <svg
+                  className={`h-4 w-4 transition-transform ${activeDropdown === 'Financial Services-Mobile' ? 'transform rotate-180' : ''
+                    }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              {activeDropdown === 'Financial Services-Mobile' && (
+                <div className="mt-1 ml-4 border-l-2 border-gray-200 pl-2">
+                  {menuStructure['Financial Services'].map((item, index) => (
+                    <Link
+                      key={index}
+                      to={item.path}
+                      className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 rounded-md"
+                      onClick={() => {
+                        setActiveDropdown(null);
+                        setIsOpen(false);
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            
             {/* Mobile Financial Consultant Dropdown */}
             <div className="relative">
               <button

@@ -24,7 +24,9 @@ import transfer_pricing_financial_consultant from '../Assets/transfer_pricing_fi
 import expatriates_and_highnet_individuals_financial_consultant from '../Assets/expatriates_and_highnet_individuals_financial_consultant.webp'
 import indirect_taxation_financial_consultant from '../Assets/indirect_taxation_financial_consultant.webp'
 import representation_and_dispute_resolution_financial_consultant from '../Assets/representation_and_dispute_resolution_financial_consultant.webp'
+import { Helmet } from 'react-helmet';
 
+import GetStarted from '../../Components/GetStarted/GetStarted';
 
 
 
@@ -34,6 +36,19 @@ const AccountingBusinessSupport = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Expert Audit, Assurance, and Tax Services - PAI Fundtech</title>
+        <meta name="description" content="Delivering bespoke financial solutions with integrity, expertise, and innovation to drive your business success. Get expert Audit, Assurance, and Tax services from PAI Fundtech." />
+        <meta name="keywords" content="Audit, Assurance, Tax, Financial Consulting, Compliance, Payroll Administration, Virtual CFO, Representation, Dispute Resolution, Accounting Advisory, IFRS, Ind-AS, US GAAP, Pre-Audit, Special Purpose Audits, Tax Benefits, Forensic Audits, IT Audits, Enterprise Risk Management, Internal Controls, Business Process Reengineering, Tax Planning, Advisory, Cross-Border Taxation, Transfer Pricing, Expatriates, High Net Individuals, Indirect Taxation" />
+        <meta property="og:title" content="Expert Audit, Assurance, and Tax Services - PAI Fundtech" />
+        <meta property="og:description" content="Delivering bespoke financial solutions with integrity, expertise, and innovation to drive your business success. Get expert Audit, Assurance, and Tax services from PAI Fundtech." />
+        <meta property="og:image" content="/path/to/your/og_image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/financial" />
+        <meta name="twitter:title" content="Expert Audit, Assurance, and Tax Services - PAI Fundtech" />
+        <meta name="twitter:description" content="Delivering bespoke financial solutions with integrity, expertise, and innovation to drive your business success. Get expert Audit, Assurance, and Tax services from PAI Fundtech." />
+        <meta name="twitter:image" content="/path/to/your/twitter_image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[500px] lg:h-[600px] bg-gradient-to-r from-gray-100 to-gray-200">
         <div
@@ -297,20 +312,9 @@ const AccountingBusinessSupport = () => {
             ))}
           </div>
         </div>
+        
       </div>
-
-      {/* Get Started Section */}
-      <div className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">How to Get Started</h2>
-          <p className="max-w-2xl mx-auto mb-8">
-            If your business is poised for growth and you're looking for the right investment partner, PAi Fundtech is here to help. Our team of experienced professionals will guide you through the process and offer the financial and strategic support you need to take your business to the next level.
-          </p>
-          <button className="bg-white text-blue-700 px-8 py-3 rounded-full hover:bg-blue-100 transition">
-            Contact Us Today
-          </button>
-        </div>
-      </div>
+      <GetStarted />
     </div>
   );
 }

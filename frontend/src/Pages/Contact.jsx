@@ -1,19 +1,10 @@
-import React, { useState } from 'react'
-import './CSS/Contact.css'
+import React, { useState } from 'react';
+import './CSS/Contact.css';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import pai_logo from './Assets/pai_logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
-
-
-  const handleMenuItemClick = (menuItem) => {
-    // You can add any additional logic here if needed
-  };
-
-
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -31,7 +22,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/submitForm', {
+      // Ensure you're using process.env.REACT_APP_API_URL to get the correct API URL
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/submitForm`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -55,9 +47,7 @@ const Contact = () => {
       console.error('Error submitting form:', error);
     }
   };
-
-
-
+  
   return (
     <div className='web-info'>
       <div className="web-info-title-1">
@@ -68,16 +58,9 @@ const Contact = () => {
           <h2><span className='r-c'>Contact Information</span></h2>
           <p>Say something to start a live chat!</p>
           <ul className="contact-details">
-            <li>
-              <FaPhoneAlt /> +91 72002-76740<br />
-            </li>
-            <li>
-              <FaEnvelope /> prachidaaiftech@gmail.com
-            </li>
-            <li>
-              <FaMapMarkerAlt /> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br />
-              Senneerkuppam, Chennai-56
-            </li>
+            <li><FaPhoneAlt /> +91 72002-76740</li>
+            <li><FaEnvelope /> prachidaaiftech@gmail.com</li>
+            <li><FaMapMarkerAlt /> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br /> Senneerkuppam, Chennai-56</li>
           </ul>
           <p><span className='r-c'>Business Hours:</span><br />
             Monday - Saturday: 10 AM - 6 PM<br />
@@ -107,56 +90,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className='footer'>
-            <div className="footer-container">
-                <div className="footer-logo-section">
-                    <div className="footer-logo">
-                        <Link to="/" onClick={() => handleMenuItemClick("Home")}>
-                            <img src={pai_logo} alt="Logo" />
-                        </Link>
-                        <p></p>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div className="footer-social-icons">
-                        <a href="https://www.facebook.com/people/PCL-Infotech-Pvt-Ltd/61565409011377/">
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                        <a href="https://www.instagram.com/pclinfotech/">
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpcl_infotech">
-                            <FontAwesomeIcon icon={faXTwitter} />
-                        </a>
-                    </div>
-                </div>
-                <div className="footer-links">
-                    <div className="footer-column">
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/services">Services</Link></li>
-                            <li><Link to="/investments vehicles">Investments Vehicles</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="footer-column">
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><i className="fas fa-envelope"></i> prachidaaiftech@gmail.com</li>
-                            <li><i className="fas fa-phone"></i>+91 73587-91015</li>
-                            <li><i className="fas fa-map-marker-alt"></i> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br />
-                            Senneerkuppam, Chennai-56</li>
-                        </ul>
-                    </div>
-            </div>
-            <div className="footer-bottom">
-                <p>© 2024 PAI Fundtech. All rights reserved. <Link to="/terms-and-conditions">Terms & Conditions</Link> · <Link to="/privacy-policy">Privacy Policy</Link></p>
-            </div>
-        </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

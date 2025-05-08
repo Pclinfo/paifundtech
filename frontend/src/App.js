@@ -11,9 +11,9 @@ import ProjectFunds from './Pages/Our Business/ProjectFunds'
 import DebtFunds from './Pages/Our Business/DebtFunds'
 import PrivateEquityFunds from './Pages/Our Business/PrivateEquityFunds'
 import AccountingBusinessSupport from './Pages/Financial Consultant/AccountingBusinessSupport'
+import Loan from './Pages/Financial Services/Loan'
 import BusinessDigital from './Pages/Research Development/BusinessDigital'
 import Footer from './Components/Footer/Footer';
-
 import ContactUs from './Pages/ContactUs'
 
 
@@ -34,9 +34,9 @@ function App() {
           <Route path="/our-business/project-funds" element={<ProjectFunds />} />
           <Route path="/our-business/debt-funds" element={<DebtFunds />} />
           <Route path="/our-business/private-equity-funds" element={<PrivateEquityFunds />} />
+          <Route path="/financial-services/loan" element={<Loan />} />
           <Route path="/financial-consultant/accounting-business-support" element={<AccountingBusinessSupport />} />
           <Route path="/research-development/business-digital" element={<BusinessDigital />} />
-
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
