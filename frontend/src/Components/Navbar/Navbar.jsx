@@ -318,7 +318,7 @@ const Navbar = () => {
                 )}
               </div>
 
-              <NavLink to="/blog" label="Blog" />
+              {/* <NavLink to="/blog" label="Blog" /> */}
               <NavLink to="/contact-us" label="Contact Us" />
             </div>
           </div>
@@ -555,7 +555,7 @@ const Navbar = () => {
             </div>
 
             {/* <MobileNavLink to="/research-development/business-digital" label="R&D" /> */}
-            <MobileNavLink to="/blog" label="Blog" />
+            {/* <MobileNavLink to="/blog" label="Blog" /> */}
             <MobileNavLink to="/contact-us" label="Contact Us" />
 
           </div>
