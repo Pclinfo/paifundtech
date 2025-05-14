@@ -96,9 +96,13 @@ const Loan = () => {
 
       {/* Loan Against Shares Section */}
       <div className="container mx-auto py-12 px-4">
+        <h4 className="text-center text-3xl font-bold text-black mb-12">
+              Loan Against Securities
+          </h4>
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8 order-2 md:order-1">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-2">Loan Against Shares</h2>
+            
+            <h2 className="text-black text-xl sm:text-2xl font-bold mb-4 pt-8"> Shares</h2>
             <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
               Your equity investments can now work double time. With our loan against shares service, you can pledge listed shares and receive instant credit.
             </p>
@@ -135,7 +139,7 @@ const Loan = () => {
             />
           </div>
           <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8 order-1 md:order-2">
-            <h2 className="text-3xl sm:text-4xl font-bold">Loan Against Bonds</h2>
+            <h2 className="text-black text-xl sm:text-2xl font-bold mb-4 pt-8">Bonds</h2>
             <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
               If you hold corporate or government bonds, we offer structured loans against these debt
               instruments. It’s a smart way to leverage fixed-income securities for immediate financing

@@ -14,6 +14,7 @@ import AccountingBusinessSupport from './Pages/Financial Consultant/AccountingBu
 import Loan from './Pages/Financial Services/Loan'
 import BusinessDigital from './Pages/Research Development/BusinessDigital'
 import Footer from './Components/Footer/Footer';
+import Blog from './Pages/Blog/Blog'
 import ContactUs from './Pages/ContactUs'
 
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/financial-services/loan" element={<Loan />} />
           <Route path="/financial-consultant/accounting-business-support" element={<AccountingBusinessSupport />} />
           <Route path="/research-development/business-digital" element={<BusinessDigital />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />

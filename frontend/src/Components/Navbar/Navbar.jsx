@@ -80,7 +80,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-colors duration-300 ${isSticky ? 'shadow-md' : ''} bg-white`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
+      <div className="max-auto mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex justify-between h-16 items-center">
           {/* Logo Section */}
           <div className="flex items-center">
@@ -318,7 +318,7 @@ const Navbar = () => {
                 )}
               </div>
 
-
+              <NavLink to="/blog" label="Blog" />
               <NavLink to="/contact-us" label="Contact Us" />
             </div>
           </div>
@@ -555,7 +555,9 @@ const Navbar = () => {
             </div>
 
             {/* <MobileNavLink to="/research-development/business-digital" label="R&D" /> */}
+            <MobileNavLink to="/blog" label="Blog" />
             <MobileNavLink to="/contact-us" label="Contact Us" />
+
           </div>
         </div>
       )}
