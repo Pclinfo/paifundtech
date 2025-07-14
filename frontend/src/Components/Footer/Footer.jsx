@@ -50,7 +50,7 @@ const Footer = () => {
                         <h4 className="font-semibold mb-5">Contact Us</h4>
                         <ul className="list-none p-0">
                             <li className="mb-3 text-gray-400">
-                                <i className="fas fa-envelope mr-2"></i>prachidaaiftech@gmail.com
+                                <i className="fas fa-envelope mr-2"></i>hr.paifundtech@gmail.com
                             </li>
                             <li className="mb-3 text-gray-400">
                                 <i className="fas fa-phone mr-2"></i>+91 72002 - 76740

@@ -1,23 +1,19 @@
+# connect.py
+
 from flask import Flask, request, jsonify
 import psycopg2
 from mailconnect import send_email_notification
-import os
-from flask_cors import CORS
 from config import *
+from flask_cors import CORS
+import os
+
 app = Flask(__name__)
 CORS(app)
-
-# PostgreSQL database connection settings
-DB_NAME = DB_NAME
-DB_USER = DB_USER
-DB_PASSWORD = DB_PASSWORD
-DB_HOST = DB_HOST
-DB_PORT = DB_PORT
 
 UPLOAD_FOLDER = "./uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-
+# Connect to PostgreSQL
 def connect_to_db():
     try:
         conn = psycopg2.connect(
@@ -29,17 +25,15 @@ def connect_to_db():
         )
         return conn
     except psycopg2.OperationalError as e:
-        print(f"Failed to connect to database: {e}")
+        print(f"❌ Failed to connect to database: {e}")
         return None
 
-
-# Create tables if they do not exist
+# Create table
 def create_tables():
     conn = connect_to_db()
     if conn:
         cur = conn.cursor()
-        cur.execute(
-            """
+        cur.execute("""
             CREATE TABLE IF NOT EXISTS PAIFundtech (
                 id SERIAL PRIMARY KEY,
                 first_name VARCHAR(100) NOT NULL,
@@ -48,52 +42,45 @@ def create_tables():
                 mobile VARCHAR(20) NOT NULL,
                 message TEXT
             );
-            """
-        )
+        """)
         conn.commit()
         conn.close()
 
-
 create_tables()
 
-
+# Route for form submission
 @app.route("/submitForm", methods=["POST"])
 def save_form_data():
     data = request.get_json()
-    print("submitForm data:", data)
+    print("📥 Received data:", data)
 
-    # Then call:
     send_email_notification(data)
 
     conn = connect_to_db()
     if conn:
         try:
             cur = conn.cursor()
-            cur.execute(
-                """
+            cur.execute("""
                 INSERT INTO PAIFundtech (first_name, last_name, email, mobile, message)
                 VALUES (%s, %s, %s, %s, %s)
-                RETURNING *;
-                """,
-                (
-                    data["firstName"],
-                    data["lastName"],
-                    data["email"],
-                    data["phoneNumber"],
-                    data["message"],
-                ),
-            )
-            new_id = cur.fetchone()
+                RETURNING id;
+            """, (
+                data["firstName"],
+                data["lastName"],
+                data["email"],
+                data["phoneNumber"],
+                data["message"],
+            ))
+            new_id = cur.fetchone()[0]
             conn.commit()
             return jsonify({"id": new_id}), 201
         except Exception as e:
-            print("Database error:", e)
+            print("❌ Database error:", e)
             return jsonify({"error": "Database insert failed"}), 500
         finally:
             conn.close()
     else:
         return jsonify({"error": "Database connection failed"}), 500
 
-
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0",port=5005)
+    app.run(debug=True, host="0.0.0.0", port=5005)

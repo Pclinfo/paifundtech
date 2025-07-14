@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import financial_advisor from '../Assets/financial_advisor.webp';
+import success from '../Assets/success.webp';
 import banner from '../Assets/Loan/banner.jpg';
 import buyingOrRefinancingCommercialRealEstate from '../Assets/Loan/Buying or Refinancing Commercial Real Estate.webp';
 import commercialMortgages from '../Assets/Loan/Commercial Mortgages.webp';
+import business_loan from '../Assets/business_loan.webp';
 import compilanceDiagnistics from '../Assets/Loan/Compilance diagnist.webp';
 import debtSyndicationAndEquityAssistance from '../Assets/Loan/Debt syndication and equity assistance.webp';
 import expandingOrRenovatingYourBusinessPremises from '../Assets/Loan/Expanding or Renovating Your Business Premises.webp';
@@ -245,7 +247,7 @@ const Loan = () => {
             />
           </div>
         </div>
-        <p className="text-center mx-4 text-lg sm:text-xl leading-relaxed">
+        <p className="text-center mx-4 text-lg sm:text-xl leading-relaxed my-8">
           Fuel your business growth with our tailored commercial mortgage solutions. We provide
           financing for a wide range of commercial properties including offices, warehouses, retail
           spaces, and industrial units. Our mortgage solutions are designed to meet the specific needs
@@ -357,6 +359,78 @@ const Loan = () => {
             </div>
           ))}
         </div>
+      </div>
+
+         {/* Commercial Mortgages Section */}
+      <div className="container mx-auto py-12 px-4">
+        <h2 className="text-center text-3xl font-bold text-black mb-12">
+          Business Loans
+        </h2>
+        <div className="flex flex-col md:flex-row items-center text-center md:text-left">
+          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h3 className="text-xl font-bold text-black mb-4">
+              Empower Your Growth with PAI Fundtech
+            </h3>
+            <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
+              Fuel your business ambitions with our hassle-free Business Loan solutions. Whether you're expanding operations, managing cash flow, or investing in new opportunities, PAI Fundtech provides flexible and reliable financing options tailored to your needs.
+            </p>
+            <p className="text-black text-xl sm:text-2xl font-bold mb-4 pt-8">
+              Key Features:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 ml-8 mb-8">
+              <li className="relative">
+                Quick and easy loan approval process
+              </li>
+              <li className="relative">
+                Flexible repayment options to suit your cash flow
+              </li>
+              <li className="relative">Competitive interest rates and transparent terms</li>
+              <li className="relative">Loans available for startups, MSMEs, and established businesses</li>
+              <li className="relative"> Minimal documentation and fast disbursal</li>
+            </ul>
+          </div>
+          <div className="md:w-1/2 mb-8 md:mb-0">
+            <img
+              src={business_loan}
+              alt="Expert Financial Accounting Services for Commercial Mortgages - PAI Fundtech"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+        <p className="text-center mx-4 text-lg sm:text-xl leading-relaxed my-8">Our business loans are designed to provide immediate working capital without disturbing your long-term financial plans.
+        </p>
+      </div>
+
+            {/* Loan Against Bonds Funds Section */}
+      <div className="container mx-auto py-12 px-4">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 mb-8 md:mb-0 order-2 md:order-1">
+            <img
+              src={success}
+              alt="Loan Against Bonds - Structured Loans for Corporate and Government Bonds with PAI Fundtech"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8 order-1 md:order-2">
+            <h2 className="text-black text-xl sm:text-1xl font-bold mb-4 pt-8">Quick Processing with Minimal Documentation</h2>
+            <p className=" list-disc list-inside text-gray-700 ">Streamlined application process with reduced paperwork for faster approvals
+            </p>
+             <h2 className="text-black text-xl sm:text-1xl font-bold mb-4 pt-8">Retain Business Ownership & Full Control</h2>
+            <p className=" list-disc list-inside text-gray-700 ">Raise capital without diluting your equity or selling business assets
+            </p>
+             <h2 className="text-black text-xl sm:text-1xl font-bold mb-4 pt-8">Payroll Administration</h2>
+            <p className=" list-disc list-inside text-gray-700 ">Efficient payroll management to support growing teams
+            </p>
+             <h2 className="text-black text-xl sm:text-1xl font-bold mb-4 pt-8">Compliance Diagnostics</h2>
+            <p className=" list-disc list-inside text-gray-700 ">Comprehensive compliance checks to keep your business audit-ready
+            </p>
+            </div>
+        </div>
+        <h3 className='text-xl font-bold text-black mb-4 pt-8'>Why Choose PAI Fundtech?</h3>        
+            <p className="text-lg sm:text-xl">We help businesses raise capital quickly and efficiently without compromising their long-term goals. Our tailored loan solutions support startups, SMEs, and large enterprises seeking growth and financial flexibility.</p>
+           <p className="font-bold text-lg sm:text-xl pt-6">Whether it's for business expansion, equipment purchase, working capital, or emergencies — PAI Fundtech empowers you to achieve your business goals with confidence.
+
+</p>
       </div>
 
       <GetStarted />

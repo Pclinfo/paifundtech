@@ -81,7 +81,7 @@ const ContactUs = () => {
             <ul className="space-y-6">
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
-                <span>prachidaaiftech@gmail.com</span>
+                <span>hr.paifundtech@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" />
@@ -192,7 +192,7 @@ const ContactUs = () => {
 
               {isSubmitted && (
                 <p className="text-green-600 text-center mt-4">
-                  Thank you! Your message has been sent to prachidaaiftech@gmail.com
+                  Thank you! Your message has been sent to hr.paifundtech@gmail.com
                 </p>
               )}
 

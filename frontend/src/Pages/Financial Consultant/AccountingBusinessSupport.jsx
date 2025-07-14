@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import financial_advisor from '../Assets/financial_advisor.webp'
 import services_financial_advisor from '../Assets/services_financial_advisor.webp'
+import financial_method from '../Assets/financial_method.webp'
 import financial_accounting_financial_advisor from '../Assets/financial_accounting_financial_advisor.webp'
 import compliance_regime_financial_advisor from '../Assets/compliance_regime_financial_advisor.webp'
 import payroll_administration_financial_advisor from '../Assets/payroll_administration_financial_advisor.webp'
@@ -103,7 +104,9 @@ const AccountingBusinessSupport = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8 order-2 md:order-1">
             <h2 className="text-3xl font-bold mb-4">Our Services</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Professional services firms offer expertise in areas like legal compliance, IT, marketing, and financial consulting. For instance, a firm may assist with meeting data regulations or crafting promotional strategies for industry events. Financial consultants help optimize financial strategies for growth. These firms focus on providing essential knowledge rather than tangible goods, ensuring businesses thrive. Their services are key to achieving regulatory compliance and effective operations.
+              Professional services firms provide expert support in areas like legal, IT, marketing, and finance. They help businesses comply with data laws and run effective marketing campaigns.
+Financial consultants guide companies in planning budgets, reducing costs, and boosting profits. Using the right financial Management, they improve investment decisions and cash flow.
+These firms offer knowledge-based services rather than physical products. Their expertise helps businesses operate smoothly and grow sustainably. They are vital for meeting regulations and industry standards.
             </p>
           </div>
           <div className="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2">
@@ -115,6 +118,30 @@ const AccountingBusinessSupport = () => {
           </div>
         </div>
       </div>
+
+           {/* What is Hedge Funds */}
+            <div className="container mx-auto py-12 px-4">
+              <div className="flex flex-col md:flex-row items-center">
+                <div className="md:w-1/2 mb-8 md:mb-0 order-2 md:order-1">
+                   <img
+              src={financial_method}
+              alt="Investment Team"
+              className="w-full h-[400px] md:h-[450px] object-cover rounded-lg shadow-lg"
+            />
+                </div>
+                <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8 order-1 md:order-2">
+                    <h2 className="text-3xl font-bold mb-4">Financial Management</h2>
+            <p className="text-gray-700 text-lg leading-relaxed">Financial Management is the process of planning, organizing, directing, and controlling financial activities.
+It involves managing money efficiently within a business or organization. The main goal is to ensure there is enough cash to run daily operations.
+It helps in budgeting and monitoring expenses wisely. Financial management ensures that funds are used effectively.
+It focuses on increasing the value of the business over time. One key task is preparing financial statements and reports. It helps in making informed investment decisions.
+Risk management is also an important part of it. A financial manager controls costs and improves profits. Proper planning avoids unnecessary debts and losses.
+It ensures that the company remains financially healthy. Cash flow management is a crucial function. Good financial management supports long-term growth. Overall, it helps businesses succeed and stay strong.
+            </p>
+                </div>
+              </div>
+            </div>
+            
 
       {/* Why Invest with Prachida Section */}
       <div className="bg-gray-50 py-16">

@@ -57,7 +57,7 @@ const Contact = () => {
           <p>Say something to start a live chat!</p>
           <ul className="contact-details">
             <li><FaPhoneAlt /> +91 72002-76740</li>
-            <li><FaEnvelope /> prachidaaiftech@gmail.com</li>
+            <li><FaEnvelope /> hr.paifundtech@gmail.com</li>
             <li><FaMapMarkerAlt /> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br /> Senneerkuppam, Chennai-56</li>
           </ul>
           <p><span className='r-c'>Business Hours:</span><br />

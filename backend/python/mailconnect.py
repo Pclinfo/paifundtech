@@ -1,7 +1,10 @@
+# mailconnect.py
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from config import *
+from config import gmail_users, gmail_passwords, sent_email
+
 def send_email_notification(data):
     gmail_user = gmail_users
     gmail_password = gmail_passwords
@@ -9,11 +12,11 @@ def send_email_notification(data):
 
     subject = f"New Inquiry from {data['firstName']}"
     body = f"""
- New Inquiry Received:
+New Inquiry Received:
 
-Full Name: {data["firstName"]+data["lastName"]}
+Full Name: {data['firstName']} {data['lastName']}
 Email: {data['email']}
-Mobile: {data["phoneNumber"]}
+Mobile: {data['phoneNumber']}
 Message: {data['message']}
 """
 
@@ -22,12 +25,16 @@ Message: {data['message']}
     message["To"] = to_email
     message["Subject"] = subject
     message.attach(MIMEText(body, "plain"))
+
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.ehlo()
         server.starttls()
         server.login(gmail_user, gmail_password)
         server.sendmail(gmail_user, to_email, message.as_string())
         server.quit()
-        print(" Email sent successfully!")
+        print("✅ Email sent successfully!")
     except Exception as e:
-        print(f" Failed to send email: {e}")
+        print("❌ Failed to send email:")
+        import traceback
+        traceback.print_exc()

@@ -64,7 +64,7 @@ const Navbar = () => {
       { label: 'Loan', path: '/financial-services/loan' }
     ],
     'Financial Consultant': [
-      { label: 'Accounting & Business Support', path: '/financial-consultant/accounting-business-support' }
+      { label: 'Financial Consultant', path: '/financial-consultant/accounting-business-support' }
     ],
     'Research & Development': [
       { label: 'Business & Digital Solutions', path: '/research-development/business-digital' }
@@ -80,7 +80,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-colors duration-300 ${isSticky ? 'shadow-md' : ''} bg-white`}>
-      <div className="max-auto mx-auto px-4 sm:px-6 lg:px-2">
+      <div className="max-auto mr-8 px-4 sm:px-6 lg:px-2">
         <div className="flex justify-between h-16 items-center">
           {/* Logo Section */}
           <div className="flex items-center">
@@ -241,7 +241,7 @@ const Navbar = () => {
                     : 'text-gray-800 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 hover:pb-2'
                     }`}
                 >
-                  Financial Consultant
+                  Financial Management
                   <svg
                     className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === 'Financial Consultant' ? 'transform rotate-180' : ''
                       }`}

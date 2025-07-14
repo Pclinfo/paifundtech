@@ -402,7 +402,7 @@ const Services = () => {
           <div className="footer-column">
             <h4>Contact Us</h4>
             <ul>
-              <li><i className="fas fa-envelope"></i>prachidaaiftech@gmail.com</li>
+              <li><i className="fas fa-envelope"></i>hr.paifundtech@gmail.com</li>
               <li><i className="fas fa-phone"></i>+91 72002-76740</li>
               <li><i className="fas fa-map-marker-alt"></i> No.2/ 156, 1st Floor, Poonamalle-Avadi Road,<br />
                 Senneerkuppam, Chennai-56</li>
